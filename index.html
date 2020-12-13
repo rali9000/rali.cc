@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<title>rali</title>
+		<title>rali</title>
+		<audio  id="my-audio" src="website.mp3" loop></audio>
 	</head>
 	<hr style="text-align:center;margin-left:0">
 	<body style="font-family:Helvetica; margin: 30px 40px 10px 40px; text-align: center; background-color: black" TEXT="white" LINK="#7dff95" VLINK= "#3ad683" ALINK="#ff2eb9">
-		<h1 style="font-size:72px; color:white">rali</h1>
-		<audio controls autoplay>
-			<source src="website.mp3">
-		</audio>
+		<h1 style="font-size:72px; color:white">rali</h1>\
+		<script>
+				var myAudio = document.getElementById('my-audio');
+				var playButton = document.getElementById('play-button');
+				//boolean; play =false;
+				var playMusic = function() {
+					myAudio.play();
+				}
+			</script>
+			<img id="play-button" src="play.png" width="65px" onclick="playMusic()">
 		<p>
 			<br /><br />
 			<a href="https://www.instagram.com/rali_9000/">instagram</a> 	
