@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight:400;
+	font-size:16px;
+	color:white;
+	margin: 30px 40px 10px 40px;
+	text-align: center;
+	background-color: black;
+}
+h1 {
+	font-size:72px;
+	color:white;
+}
+h2{
+	font-size:48px;
+	color:white;
+}
+h3{
+	font-size:32px;
+	color:white;
+}
+hr{
+	width: 65%;
+	margin:0 auto;
+}
+a{
+	color:#7dff95;
+}
+a:visited{
+	color:#3ad683;
+}
+a:hover{
+	color:#ffc9fb;
+}
+a:active{
+	color:#ff2eb9;
+}
