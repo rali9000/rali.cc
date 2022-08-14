@@ -1,0 +1,116 @@
+.music_description {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #fff;
+    width: 100%;
+}
+
+.soundcloud iframe {
+    height: 166px !important;
+}
+
+.music_container2 {
+    background: var(--main-color);
+}
+
+.music_heading2 {
+    text-align: center;
+    color: var(--tertiary-color-light);
+    font-size: 3rem;
+    font-weight: 900;
+    /* margin-bottom: -2rem; */
+}
+
+@media screen and (max-width: 960px) {
+
+    .home_heading {
+        font-size: 10rem!important;
+    }
+
+    .home_btn--container {
+        padding: 1rem!important;
+        align-items: center;
+        display:flex;
+        justify-content: center;
+    }
+
+    .music_heading, .music_heading2 {
+        font-size: 2rem;
+    }
+
+    .music_text {
+        font-size: 1.5rem;
+    }
+
+    .music_song iframe{
+        height: 190px;
+    }
+
+    .music_row1 iframe{
+        height: 80px;
+    }
+
+    .music_emb--container .soundcloud{
+        height: 166px;
+    }
+
+    .soundcloud {
+        /* padding: 2rem 0; */
+        margin: 1rem 0;
+    }
+
+    .music_row1.music_col1{
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    
+    .music_row2.music_col1{
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    
+    .music_row1.music_col2 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    
+    .music_row2.music_col2 {
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+    
+    .music_row3.music_col1 {
+        grid-row-start: 5;
+        grid-column-start: 1;
+    }
+
+    .music_row3.music_col2 {
+        grid-row-start: 6;
+        grid-column-start: 1;
+    }
+    
+    .music_row4.music_col1 {
+        grid-row-start: 7;
+        grid-column-start: 1;
+    }
+
+    .music_row4.music_col2 {
+        grid-row-start: 8;
+        grid-column-start: 1;
+    }
+    
+    .music_row5.music_col1 {
+        grid-row-start: 9;
+        grid-column-start: 1;
+    }
+
+    .music_row5.music_col2 {
+        grid-row-start: 10;
+        grid-column-start: 1;
+    }
+    
+    .music_row6.music_col1 {
+        grid-row-start: 11;
+        grid-column-start: 1;
+    }
+}
