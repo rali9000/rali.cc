@@ -336,16 +336,19 @@ html, body {
 
 html {
     font-size: 16px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 /*scrollbar*/
-::-webkit-scrollbar {
-	width: 0;
+html::-webkit-scrollbar {
+    appearance: none; /* Safari */
+	width: 0; /* Chrome */
     height: 0;
 }
 
 /*intro screen*/
-.intro {
+.intro, .intro_short {
     position: fixed;
     z-index: 9999;
     left: 0;
@@ -436,6 +439,7 @@ html {
     font-size: 3rem;
     font-weight: 900;
     transition: all 0.5s ease-in-out;
+    z-index: 999;
 }
 
 /* #navbar_logo img {
@@ -452,6 +456,11 @@ html {
 
 .fa-logo {
     margin-right: 0.5 rem;
+}
+
+.navbar_toggle {
+    cursor: pointer;
+    z-index: 999;
 }
 
 .navbar_menu {
@@ -530,6 +539,9 @@ html {
 }
 
 .link {
+    /* display: inline-flex;
+    align-self: center;
+    align-items: center; */
     text-decoration: none;
     color: var(--tertiary-color-light);
     transition: all 0.3s ease-in-out;
@@ -539,6 +551,10 @@ html {
     color: var(--tertiary-color);
     transition: all 0.1s ease-in-out;
 }
+
+/* .link i {
+    font-size: 2rem;
+} */
 
 @media screen and (max-width: 960px) {
 
@@ -652,6 +668,16 @@ html {
 .home {
     background-color: var(--main-color);
     padding: 200px, 0;
+}
+
+.home.bg {
+    background-image: url(https://images.pexels.com/photos/6619724/pexels-photo-6619724.jpeg);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 .home_container {
@@ -868,270 +894,6 @@ html {
         text-align: left;
         font-size: 1.5rem;
         margin-bottom: -1rem;
-    }
-}
-
-/* art section */
-
-.art_container {
-    background: var(--main-color);
-}
-
-.art_content{
-    padding-top: 10rem;
-    padding-bottom: 7.5rem;
-    margin: 0 auto;
-    height: 100vh;
-    width: 100%;
-    max-width: 1920px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.art_heading {
-    font-size: 3rem;
-    color: var(--tertiary-color-light);
-    font-weight: 900;
-}
-
-.art_text {
-    font-size: 2rem;
-    color: #fff;
-    font-weight: 300;
-    padding: 2rem;
-}
-
-.art_img--container {
-    margin-top: -3.75rem;
-    width: 100%;
-    height: 75vh;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(5, minmax(24rem, 1fr));
-    justify-content: center;
-    align-content: center;
-    overflow: hidden;
-}
-
-.art_row1{
-    grid-column-start: 2;
-}
-
-.art_row2{
-    grid-column-start: 3;
-}
-
-.art_row3{
-    grid-column-start: 4;
-}
-
-.art_img img {
-    max-width: 100%;
-    height: auto;
-    max-height: 30vh;
-    z-index: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.art_img img:hover {
-    transform: scale(1.25);
-    z-index: 9999;
-    transition: all 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 960px) {
-
-    .art_content{
-        height: 150vh;
-    }
-    
-    .art_img--container {
-        display: grid;
-        margin: 5rem 0;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, minmax(16rem, 1fr));
-        grid-gap: 1rem;
-        height: 85%;
-        width: 100%;
-        justify-content: center;
-        padding: 2rem;
-    }
-
-    .art_row1 {
-        grid-row-start: 1;
-    }
-    
-    .art_row2 {
-        grid-row-start: 2;
-    }
-    
-    .art_row3 {
-        grid-row-start: 3;
-    }
-
-    .art_col1 {
-        grid-column-start: 1;
-    }
-
-    .art_col2 {
-        grid-column-start: 2;
-    }
-    
-    .art_img img {
-        width: auto;
-        height: auto;
-        max-height: 100%;
-    }
-}
-
-/* music section */
-
-.music_container {
-    background: var(--accent-color);
-}
-
-.music_content {
-    /* padding-top: 10rem;
-    padding-bottom: 7.5rem;
-    margin: 0 auto;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    overflow-x: hidden;
-    overflow-y: hidden; */
-    padding: 10rem 2rem 7.5rem 2rem;
-    margin: 0 auto;
-    max-width: 90%;
-    text-align: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.music_text {
-    height: 100%;
-    width: 100%;
-    color: #fff;
-    font-weight: 300;
-    font-size: 2rem;
-    text-align: center;
-    flex: 50%;
-    padding: 1rem 2rem;
-}
-
-.music_heading {
-    text-align: center;
-    color: var(--accent-color-light);
-    font-size: 3rem;
-    font-weight: 900;
-    /* margin-bottom: -2rem; */
-}
-
-.music_emb--container {
-    /* margin-top: -45rem;
-    width: 100%;
-    height: 40vh;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(4, minmax(480px, 1fr));
-    justify-content: center;
-    align-content: center; */
-    width: 100%;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(4, minmax(480px, 1fr));
-    justify-content: center;
-    align-content: center;
-}
-
-.music_song {
-    height: 100%;
-    width: 100%;
-}
-
-.music_album iframe {
-    margin-top: 4rem;
-    border-radius: 16px;
-    width: 100%;
-    height: 450px;
-}
-
-.music_col1 {
-    grid-column-start: 2;
-}
-
-.music_col2 {
-    grid-column-start: 3;
-}
-
-.music_row1 {
-    grid-row-start: 1;
-}
-
-.music_row1 iframe, .music_row3 iframe, .music_row5 iframe {
-    height: 80px;
-}
-
-.music_row2 {
-    grid-row-start: 2;
-}
-
-@media screen and (max-width: 960px) {
-
-    .music_text {
-        font-size: 1.5rem;
-    }
-
-    /* .music_content{
-        height: 100vh;
-    } */
-    
-    .music_emb--container {
-        display: grid;
-        /* margin-top: -45rem; */
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, minmax(fit-content, 1fr));
-        grid-column-gap: 0;
-        grid-row-gap: 1rem;
-        width: 100%;
-        justify-content: center;
-        padding: 1rem;
-    }
-
-    .music_song iframe{
-        height: 190px;
-    }
-
-    .music_album iframe{
-        width: 360px;
-        max-height: 100%;
-    }
-
-    .music_row1 iframe{
-        height: 80px;
-    }
-
-    .music_emb--container .music_row1{
-        height: 80px;
-    }
-
-    .music_row1.music_col1{
-        grid-row-start: 1;
-        grid-column-start: 1;
-    }
-    
-    .music_row2.music_col1{
-        grid-row-start: 2;
-        grid-column-start: 1;
-    }
-    
-    .music_row1.music_col2 {
-        grid-row-start: 3;
-        grid-column-start: 1;
-    }
-    
-    .music_row2.music_col2 {
-        grid-row-start: 4;
-        grid-column-start: 1;
     }
 }
 
