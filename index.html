@@ -7,6 +7,8 @@
     <meta name="theme-color" content="#111">
     <title>rali</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="art_styles.css">
+    <link rel="stylesheet" href="music_styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -37,31 +39,37 @@
             <div class="navbar_menu">
                 <li class="navbar_item">
                     <a href="#home" class="navbar_links">
+                        <i class="icon-house-solid"></i>
                         home
                     </a>
                 </li>
                 <li class="navbar_item">
                     <a href="#about" class="navbar_links">
+                        <i class="icon-circle-info-solid"></i>
                         about
                     </a>
                 </li>
                 <li class="navbar_item">
                     <a href="#art" class="navbar_links">
+                        <i class="icon-image-solid"></i>
                         art
                     </a>
                 </li>
                 <li class="navbar_item">
                     <a href="#music" class="navbar_links">
+                        <i class="icon-music-solid"></i>
                         music
                     </a>
                 </li>
                 <li class="navbar_item">
                     <a href="#projects" class="navbar_links">
+                        <i class="icon-code-solid"></i>
                         projects
                     </a>
                 </li>
                 <li class="navbar_btn">
                     <a href="./contact.html" class="button">
+                        <i class="icon-envelope"></i>
                         contact me
                     </a>
                 </li>
@@ -70,12 +78,13 @@
     </nav>
 
     <!-- Main Splash Screen -->
-    <div class="home" id="home">
+    <div class="home bg" id="home">
         <div class="home_container">
             <div class="home_content">
                 <h1 class="home_heading">rali</h1>
                 <p class="home_description">student, artist, programmer, and producer.</p>
-                <p class="home_desc2">this website is currently being rebuilt, all pages are from an earlier version of the website or are in development.</p>
+                <p class="home_desc2">this website is developed by me.</p>
+                <p class="home_desc2">it's currently being rebuilt, all pages are still in development.</p>
                 <a class="home_btn--container" href="#about"><button class="home_btn">explore my work</button></a>
             </div>
         </div>
@@ -118,26 +127,26 @@
                 </div>
                 <div class="art_text">
                     <p>
-                        below are some of my most recent personal works from my life drawing class, <a href="./art.html" class="link">click here</a> to see more.
+                        Below are some of my most recent personal work, <a href="./art.html" class="link">click here</a> to see more.
                     </p>
                 </div>
                 <div class="art_img--container">
                     <div class="art_img art_row1 art_col1">
                         <img src="./images/art/art (2).png" alt="charcoal figure drawing">
                     </div>
-                    <div class="art_img art_row2 art_col1">
+                    <div class="art_img art_row1 art_col2">
                         <img src="./images/art/art (6).png" alt="ink figure drawing">
                     </div>
-                    <div class="art_img art_row3 art_col1">
+                    <div class="art_img art_row1 art_col3">
                         <img src="./images/art/art (5).png" alt="ink/graphite portrait study">
                     </div>
-                    <div class="art_img art_row1 art_col2">
+                    <div class="art_img art_row2 art_col1">
                         <img src="./images/art/art (3).png" alt="charcoal figure drawing">
                     </div>
                     <div class="art_img art_row2 art_col2">
                         <img src="./images/art/art (1).png" alt="self-portrait">
                     </div>
-                    <div class="art_img art_row3 art_col2">
+                    <div class="art_img art_row2 art_col3">
                         <img src="./images/art/art (4).png" alt="ink figure study">
                     </div>
                 </div>
@@ -153,25 +162,20 @@
                     <h1>music</h1>
                 </div>
                 <div class="music_text">
-                    <h2>recent release</h2>
-                    <h5 style="margin-bottom: 1rem;">my new album: yeah whatever</h5>
+                    <h2>recent releases</h2>
                     <p>
                         <a href="./music.html" class="link">click here</a> to see older releases and placements.
                      </p>
                 </div>
                 <div class="music_emb--container">
-                    <div class="music_album">
-                        <iframe style="border-radius:16px" src="https://open.spotify.com/embed/album/6pjAQfzhsYsy6wEq4pdm1M?utm_source=generator" width="100%" height="315" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+                    <div class="spotify music_song music_row1 music_col1">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3rmt9r8Lygo1OIOIPXgZNe?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                    <div class="music_album">
-                        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/yeah-whatever-ep/1635512449"></iframe>
+                    <div class="apple music_song music_row1 music_col2">
+                        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/built-to-break/1651015888?i=1651015889"></iframe>
                     </div>
-                    <div class="music_album">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_lV6pM8xJubPO0E7M0zX5ry_0raE1i8p84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="music_album">
-                        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1471222843&color=%23f40785&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                    </div>
+
                 </div>
             </div>
         </div>
