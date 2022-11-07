@@ -1,12 +1,24 @@
-.music_description {
-    font-size: 1.5rem;
-    font-weight: 100;
-    color: #fff;
-    width: 100%;
+.music_container {
+    background: var(--accent-color);
 }
 
-.soundcloud iframe {
-    height: 166px !important;
+.music_text {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    flex: 50%;
+    padding: 1rem 2rem;
+}
+
+.music_heading {
+    text-align: center;
+    color: var(--accent-color-light);
+    font-size: 3rem;
+    font-weight: 900;
+    /* margin-bottom: -2rem; */
 }
 
 .music_container2 {
@@ -18,7 +30,112 @@
     color: var(--tertiary-color-light);
     font-size: 3rem;
     font-weight: 900;
-    /* margin-bottom: -2rem; */
+}
+
+.music_content {
+    /* padding-top: 10rem;
+    padding-bottom: 7.5rem;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden; */
+    padding: 10rem 2rem 7.5rem 2rem;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.music_emb--container {
+    width: 100%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, minmax(480px, 1fr));
+    justify-content: center;
+    align-content: center;
+}
+
+.music_song {
+    height: 100%;
+    width: 100%;
+}
+
+.music_description {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #fff;
+    width: 100%;
+}
+
+.music_home {
+    background-color: var(--main-color);
+    padding: 200px, 0;
+
+    background-image: url(https://www.image-line.com/wp-content/uploads/2020/11/fl-studio-UI.png);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.soundcloud iframe {
+    height: 166px !important;
+}
+
+.date_label {
+    grid-column-start: 4;
+}
+
+.date_label .music_text {
+    font-size: 1rem;
+    padding-left: 1rem;
+    min-height: 40px;
+    max-height: fit-content;
+    height: 100%;
+    width: 100%;
+    max-width: 1rem;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+}
+
+.date_label .music_text p {
+    height: 100%;
+}
+
+.music_col1 {
+    grid-column-start: 2;
+}
+
+.music_col2 {
+    grid-column-start: 3;
+}
+
+.music_row1 {
+    grid-row-start: 1;
+}
+
+.music_row2 {
+    grid-row-start: 2;
+}
+
+.music_row3 {
+    grid-row-start: 3;
+}
+
+.music_row4 {
+    grid-row-start: 4;
+}
+
+.music_row5 {
+    grid-row-start: 5;
+}
+
+.music_row6 {
+    grid-row-start: 6;
 }
 
 @media screen and (max-width: 960px) {
@@ -42,34 +159,76 @@
         font-size: 1.5rem;
     }
 
-    .music_song iframe{
-        height: 190px;
-    }
-
-    .music_row1 iframe{
-        height: 80px;
-    }
-
-    .music_emb--container .soundcloud{
+    .music_emb--container .soundcloud {
         height: 166px;
     }
+
+    .music_album {
+        padding-bottom: 1rem;
+    }
+
+    .music_album iframe {
+        height: 280px;
+    }
+
+    .music_album.apple iframe {
+        height: 450px;
+    }
+
+    
+    .spotify iframe{
+        margin-top: 20px;
+    }
+    
+    .music_song {
+        height: 175px;
+    }
+
 
     .soundcloud {
         /* padding: 2rem 0; */
         margin: 1rem 0;
     }
 
+    .date_label {
+        display: none;
+    }
+
+    .music_text {
+        font-size: 1.5rem;
+    }
+
+    /* .music_content{
+        height: 100vh;
+    } */
+    
+    .music_emb--container {
+        display: grid;
+        /* margin-top: -45rem; */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, minmax(fit-content, 1fr));
+        grid-column-gap: 0;
+        grid-row-gap: 1rem;
+        width: 100%;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .music_song iframe{
+        height: 190px;
+    }
+
     .music_row1.music_col1{
         grid-row-start: 1;
         grid-column-start: 1;
     }
-    
-    .music_row2.music_col1{
+
+    .music_row1.music_col2 {
         grid-row-start: 2;
         grid-column-start: 1;
     }
     
-    .music_row1.music_col2 {
+    .music_row2.music_col1{
         grid-row-start: 3;
         grid-column-start: 1;
     }
@@ -88,7 +247,7 @@
         grid-row-start: 6;
         grid-column-start: 1;
     }
-    
+
     .music_row4.music_col1 {
         grid-row-start: 7;
         grid-column-start: 1;
@@ -108,9 +267,15 @@
         grid-row-start: 10;
         grid-column-start: 1;
     }
-    
+
     .music_row6.music_col1 {
         grid-row-start: 11;
         grid-column-start: 1;
     }
+
+    .music_row6.music_col2 {
+        grid-row-start: 12;
+        grid-column-start: 1;
+    } 
+    
 }
