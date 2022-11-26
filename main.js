@@ -7,29 +7,30 @@ let logo = document.querySelector('.intro_logo');
 let logoSpan = document.querySelectorAll('.logo_span');
 
 window.addEventListener('DOMContentLoaded', ()=>{
-
-    setTimeout(()=>{
-        logoSpan.forEach((span, idx)=>{
-            setTimeout(()=>{
-                span.classList.add('active');
-            }, (idx + 1) * 10)
-        });
-
+    if (intro != null) {
         setTimeout(()=>{
             logoSpan.forEach((span, idx)=>{
                 setTimeout(()=>{
-                    span.classList.remove('active');
-                    span.classList.add('fade');
-                }, (idx - 1) * 5)
+                    span.classList.add('active');
+                }, (idx + 1) * 10)
             });
-        }, 800);
-
-        setTimeout(()=>{
-            intro.style.top = '110vh';
-            intro.style.transition = 'all .5s ease-in-out';
-        }, 1000);
-
-    });
+    
+            setTimeout(()=>{
+                logoSpan.forEach((span, idx)=>{
+                    setTimeout(()=>{
+                        span.classList.remove('active');
+                        span.classList.add('fade');
+                    }, (idx - 1) * 5)
+                });
+            }, 800);
+    
+            setTimeout(()=>{
+                intro.style.top = '110vh';
+                intro.style.transition = 'all .5s ease-in-out';
+            }, 1000);
+    
+        });
+    }
 });
 
 /*

@@ -8,6 +8,7 @@
     <title>rali</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="art_styles.css">
+    <link rel="stylesheet" href="./fonts/icons/css/website_icons.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -17,6 +18,7 @@
 <body>
     <!-- <div class="intro_short">
     </div> -->
+    <!-- Navbar -->
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar_container">
@@ -30,23 +32,33 @@
             </div>
             <div class="navbar_menu">
                 <li class="navbar_item">
-                    <a href="#home" class="navbar_links">
-                        home
-                    </a>
-                </li>
-                <li class="navbar_item">
                     <a href="#personal_work" class="navbar_links">
-                        personal
+                        <i class="icon-personal"></i>
+                        <div class="nav_text">personal work</div>
                     </a>
                </li>
                <li class="navbar_item">
                     <a href="#commissions" class="navbar_links">
-                        commissions
+                        <i class="icon-handshake"></i>
+                        <div class="nav_text">commissions</div>
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="./index.html" class="navbar_links">
+                        <i class="icon-house-solid"></i>
+                        <div class="nav_text">home</div>
                     </a>
                 </li>
                 <li class="navbar_btn">
                     <a href="./contact.html" class="button">
+                        <i class="icon-envelope"></i>
                         contact me
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#home" class="navbar_links">
+                        <i class="icon-arrow-up-solid"></i>
+                        <div class="nav_text">top</div>
                     </a>
                 </li>
             </div>
@@ -54,7 +66,7 @@
     </nav>
 
     <!-- Main Splash Screen -->
-    <div class="art_home" id="home">
+    <div class="art_home home" id="home">
         <div class="home_container">
             <div class="home_content">
                 <h1 class="home_heading">art</h1>
@@ -63,7 +75,7 @@
                     <a class="home_btn--container link" href="#personal_work">personal work</a>
                     <a class="home_btn--container link" href="#commissions">commissions</a>
                 </div>
-                <p class="home_desc2">this page is <strong>not</strong> yet optimized for mobile.</p>
+                <!-- <p class="home_desc2">this page is <strong>not</strong> yet optimized for mobile.</p> -->
             </div>
         </div>
     </div>
@@ -71,22 +83,22 @@
     <!-- Personal Work -->
     <div class="personal_work" id="personal_work">
         <!-- Main personal work section -->
-        <div class="art_container">
+        <div class="art_container2">
             <div class="art_content">
                     
-                <div class="art_heading">
+                <div class="art_heading2">
                     <h1>personal work</h1>
                 </div>
                 <div class="art_text">
                     <p>
-                        art made by me, for me.
+                        all art by me.
                     </p>
                 </div>
                 <div class="art_img--container">
                     <div class="fade art_img art_row1 art_col1">
-                        <img src="./images/art/art (2).png" alt="charcoal figure drawing">
+                        <img src="./images/art/personal/art (2).png" alt="charcoal figure drawing">
                         <p class="art_description">
-                            figure
+                            <i>figure</i>
                             <br>
                             charcoal on paper
                             <br>
@@ -94,9 +106,9 @@
                         </p>
                     </div>
                     <div class="fade art_img art_row1 art_col2">
-                        <img src="./images/art/art (6).png" alt="ink figure drawing">
+                        <img src="./images/art/personal/art (6).png" alt="ink figure drawing">
                         <p class="art_description">
-                            void
+                            <i>void</i>
                             <br>
                             ink and charcoal on paper
                             <br>
@@ -104,9 +116,9 @@
                         </p>
                     </div>
                     <div class="fade art_img art_row1 art_col3">
-                        <img src="./images/art/art (5).png" alt="ink/charcoal portrait study">
+                        <img src="./images/art/personal/art (5).png" alt="ink/charcoal portrait study">
                         <p class="art_description">
-                            gaze
+                            <i>gaze</i>
                             <br>
                             ink and charcoal on paper
                             <br>
@@ -114,9 +126,9 @@
                         </p>
                     </div>
                     <div class="fade art_img art_row2 art_col1">
-                        <img src="./images/art/art (3).png" alt="charcoal figure drawing">
+                        <img src="./images/art/personal/art (3).png" alt="charcoal figure drawing">
                         <p class="art_description">
-                            oranges
+                            <i>oranges</i>
                             <br>
                             ink on paper
                             <br>
@@ -124,9 +136,9 @@
                         </p>
                     </div>
                     <div class="fade art_img art_row2 art_col2">
-                        <img src="./images/art/art (1).png" alt="self-portrait">
+                        <img src="./images/art/personal/art (1).png" alt="self-portrait">
                         <p class="art_description">
-                            self portrait
+                            <i>self portrait</i>
                             <br>
                             graphite and ink on paper
                             <br>
@@ -134,9 +146,9 @@
                         </p>
                     </div>
                     <div class="fade art_img art_row2 art_col3">
-                        <img src="./images/art/art (4).png" alt="ink figure study">
+                        <img src="./images/art/personal/art (4).png" alt="ink figure study">
                         <p class="art_description">
-                            distiller
+                            <i>distiller</i>
                             <br>
                             colored pencils graphite and ink on paper
                             <br>
@@ -144,9 +156,9 @@
                         </p>
                     </div>
                     <div class="fade art_img art_row3 art_col1large">
-                        <img src="./images/art/art (7).png" alt="abstract drawing, ink">
+                        <img src="./images/art/personal/art (7).png" alt="abstract drawing, ink">
                         <p class="art_description">
-                            movement
+                            <i>movement</i>
                             <br>
                             ink on paper
                             <br>
@@ -154,9 +166,9 @@
                         </p>
                     </div>
                     <div class="fade art_img art_row3 art_col3">
-                        <img src="./images/art/art (8).png" alt="self-portrait, ink">
+                        <img src="./images/art/personal/art (8).png" alt="self-portrait, ink">
                         <p class="art_description">
-                            self portrait
+                            <i>self portrait</i>
                             <br>
                             ink on paper
                             <br>
@@ -167,127 +179,731 @@
 
                 <!-- Personal cover art -->
                 <div class="art_text">
+                    <div class="art_heading2">
+                        <h4>cover art</h4>
+                    </div>
                     <p>
-                        cover art made by me, for my music.
+                        made by me, for my music.
                     </p>
                 </div>
+
+                
                 <div class="art_img--container">
+                    
+                    <!-- Space Waster -->
                     <div class="fade art_img art_row1 art_col1">
-                        <img src="./images/art/btb.png" alt="built to break cover art">
+                        <img src="./images/art/personal/sw final.png" alt="space waster cover art">
                         <p class="art_description">
-                            built to break
+                            <i>space waster</i>  <br style="margin: auto;">
+                            (upcoming album)
                             <br>
-                            2022
+                            coming 2023
+                            <!-- <br>
+                            <a class="link" href="https://music.apple.com/us/album/built-to-break/1651015888?i=1651015889">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/3rmt9r8Lygo1OIOIPXgZNe?si=db7abe6c3cc24165">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/prodrali/built-to-break">
+                                <i class="icon-soundcloud icon"></i>
+                            </a> -->
                         </p>
                     </div>
+
+                    <!-- Complete and Total Breakdown -->
                     <div class="fade art_img art_row1 art_col2">
-                        <img src="./images/art/sw final.png" alt="space waster cover art">
+                        <img src="./images/art/personal/catb.png" alt="built to break cover art">
                         <p class="art_description">
-                            space waster (upcoming album)
+                            <i>complete and total breakdown</i>
                             <br>
-                            2022
+                            coming 2022
+                            <!-- <br>
+                            <a class="link" href="https://music.apple.com/us/album/built-to-break/1651015888?i=1651015889">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/3rmt9r8Lygo1OIOIPXgZNe?si=db7abe6c3cc24165">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/prodrali/built-to-break">
+                                <i class="icon-soundcloud icon"></i>
+                            </a> -->
                         </p>
                     </div>
+
+                    <!-- Built To Break -->
                     <div class="fade art_img art_row1 art_col3">
-                        <img src="./images/art/sw concept.png" alt="space waster early concept">
+                        <img src="./images/art/personal/btb.png" alt="built to break cover art">
                         <p class="art_description">
-                            space waster (early concept)
+                            <i>built to break</i>
                             <br>
                             2022
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/built-to-break/1651015888?i=1651015889">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/3rmt9r8Lygo1OIOIPXgZNe?si=db7abe6c3cc24165">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/prodrali/built-to-break">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
                         </p>
                     </div>
+
+                    <!-- Space Waster (Original) -->
                     <div class="fade art_img art_row2 art_col1">
-                        <img src="./images/art/yeah whatever final.png" alt="yeah whatever cover art">
+                        <img src="./images/art/personal/sw concept.png" alt="space waster early concept">
                         <p class="art_description">
-                            yeah whatever
+                            <i>space waster</i> <br style="margin: auto;">
+                            (early concept)
                             <br>
                             2022
                         </p>
                     </div>
+
+                    <!-- Yeah Whatever (Alternate) -->
                     <div class="fade art_img art_row2 art_col2">
-                        <img src="./images/art/yeah whatever alt.png" alt="yeah whatever alternate cover">
+                        <img src="./images/art/personal/yeah whatever alt.png" alt="yeah whatever alternate cover">
                         <p class="art_description">
-                            yeah whatever (alternate cover)
+                            <i>yeah whatever</i> <br style="margin: auto;">
+                            (alternate cover)
                             <br>
                             2022
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/atrophy/1614118117?i=1614118118">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/62QJBGMJq7sDI2eH6OXM91?si=b9badea3766f44e9">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/prodrali/sets/yeah-whatever">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
                         </p>
                     </div>
+
+                    <!-- Yeah Whatever -->
                     <div class="fade art_img art_row2 art_col3">
-                        <img src="./images/art/atrophy.png" alt="atrophy cover art">
+                        <img src="./images/art/personal/yeah whatever final.png" alt="yeah whatever cover art">
                         <p class="art_description">
-                            atrophy
+                            <i>yeah whatever</i>
                             <br>
                             2022
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/yeah-whatever-ep/1635512449">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/album/6pjAQfzhsYsy6wEq4pdm1M?si=eKsEIxrzQ321aqxGxFl9Ag">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/prodrali/sets/yeah-whatever">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
                         </p>
                     </div>
+
+                    <!-- Atrophy (Alternate Cover) -->
                     <div class="fade art_img art_row3 art_col1">
-                        <img src="./images/art/scrapped v3.png" alt="coming down (scrapped album), version 3">
+                        <img src="./images/art/personal/atrophy.png" alt="atrophy alternate cover">
                         <p class="art_description">
-                            scrapped album (version 3)
+                            <i>atrophy</i> (alternate cover)
                             <br>
                             2022
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/yeah-whatever-ep/1635512449">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/album/6pjAQfzhsYsy6wEq4pdm1M?si=eKsEIxrzQ321aqxGxFl9Ag">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/prodrali/atrophy">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
                         </p>
                     </div>
+
+                    <!-- (Cancelled Album) -->
                     <div class="fade art_img art_row3 art_col2">
-                        <img src="./images/art/scrapped v2.png" alt="coming down (scrapped album), version 2">
+                        <img src="./images/art/personal/scrapped v3.png" alt="coming down (cancelled album), version 3">
                         <p class="art_description">
-                            scrapped album (version 2)
+                            cancelled album (version 3)
                             <br>
                             2022
                         </p>
                     </div>
                     <div class="fade art_img art_row3 art_col3">
-                        <img src="./images/art/scrapped v1.png" alt="coming down (scrapped album), version 1">
+                        <img src="./images/art/personal/scrapped v2.png" alt="coming down (cancelled album), version 2">
                         <p class="art_description">
-                            scrapped album (version 1)
+                            cancelled album (version 2)
                             <br>
                             2022
                         </p>
                     </div>
                     <div class="fade art_img art_row4 art_col1">
-                        <img src="./images/art/old v3.png" alt="old scrapped cover art">
+                        <img src="./images/art/personal/scrapped v1.png" alt="coming down (cancelled album), version 1">
                         <p class="art_description">
-                            old scrapped cover art
+                            cancelled album (version 1)
                             <br>
-                            2019
+                            2022
                         </p>
                     </div>
+
+                    <!-- Atrophy -->
                     <div class="fade art_img art_row4 art_col2">
-                        <img src="./images/art/old v2.png" alt="old scrapped cover art">
+                        <img src="./images/art/personal/atrophy og.png" alt="atrophy cover art">
                         <p class="art_description">
-                            old scrapped cover art
+                            <i>atrophy</i>
                             <br>
-                            2019
+                            2021
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/yeah-whatever-ep/1635512449">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/album/6pjAQfzhsYsy6wEq4pdm1M?si=eKsEIxrzQ321aqxGxFl9Ag">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/prodrali/atrophy">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
                         </p>
                     </div>
+
+                    <!-- Unused/Deleted -->
                     <div class="fade art_img art_row4 art_col3">
-                        <img src="./images/art/old v1.png" alt="december cover art">
+                        <img src="./images/art/personal/old v3.png" alt="old scrapped cover art">
                         <p class="art_description">
-                            december
+                            unused cover art
                             <br>
                             2019
                         </p>
                     </div>
-                </div>
+                    <div class="fade art_img art_row5 art_col1">
+                        <img src="./images/art/personal/old v2.png" alt="old scrapped cover art">
+                        <p class="art_description">
+                            cover art from a deleted song
+                            <br>
+                            2019
+                        </p>
+                    </div>
+                    <div class="fade art_img art_row5 art_col2">
+                        <img src="./images/art/personal/old v4.png" alt="deleted cover art">
+                        <p class="art_description">
+                            cover art from a deleted song
+                            <br>
+                            2019
+                        </p>
+                    </div>
 
-                <!-- Commissions -->
-                <div class="commissions" id="commissions">
-                    <div class="art_container2">
-                        <div class="art_content">
-                                
-                            <div class="art_heading2">
-                                <h1>commissions</h1>
-                            </div>
-                            <div class="art_text">
-                                <p>
-                                    art commissions.
-                                </p>
-                            </div>
-
-                        </div>
+                    <!-- December -->
+                    <div class="fade art_img art_row5 art_col3">
+                        <img src="./images/art/personal/old v1.png" alt="december cover art">
+                        <p class="art_description">
+                            <i>december</i>
+                            <br>
+                            2019
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/december/1486684027?i=1486684028">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/7j9oMtQWEl1R085sDn6P1j?si=a957511aac254707">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                        </p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Commissions -->
+    <div class="commissions" id="commissions">
+        <div class="art_container">
+            <div class="art_content">
+                                    
+                <div class="art_heading">
+                    <h1>commissions</h1>
+                </div>
+                <div class="art_text">
+                    <p>
+                        art commissions.
+                        <!-- under construction. -->
+                    </p>
+                </div>
+    
+                <!-- White Room -->
+                <div class="art_img--container">
+                    <div class="fade art_img art_row1 art_col1">
+                        <img src="./images/art/commissions/wr.png">
+                        <p class="art_description">
+                            <i>white room</i> (w/ <a class="link" href="https://instagram.com/reasleft">reas</a>)
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/reasleft">reas</a>
+                            <br>
+                            2021
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/white-room/1612133575?i=1612133577">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/0HzKiFWS8QdMZdJAfHG1y7?si=210cb541e9ef429c">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/reasforever/white-room">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Nervous Breakdown -->
+                    <div class="fade art_img art_row1 art_col2">
+                        <img src="./images/art/commissions/nb.png">
+                        <p class="art_description">
+                            <i>nervous breakdown</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/reasleft">reas</a>
+                            <br>
+                            2021
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/nervous-breakdown/1611870094?i=1611870095">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/0HzKiFWS8QdMZdJAfHG1y7?si=5e471f2bc3894cee">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/reasforever/nervous-breakdown">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Bynge -->
+                    <div class="fade art_img art_row1 art_col3">
+                        <img src="./images/art/commissions/bynge.png">
+                        <p class="art_description">
+                            <i>bynge</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/reasleft">reas</a>
+                            <br>
+                            2021
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/bynge-ep/1612776882">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/album/2GflSOcmyg6KHi8F354EAI?si=XxX8gQ3nQKGqIky4KdCcHQ">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/reasforever/sets/bynge">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Bynge Tracklist -->
+                    <div class="fade art_img art_row2 art_col1">
+                        <img src="./images/art/commissions/btl.png">
+                        <p class="art_description">
+                            <i>bynge</i> (track list)
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/reasleft">reas</a>
+                            <br>
+                            2021
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/bynge-ep/1612776882">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/album/2GflSOcmyg6KHi8F354EAI?si=XxX8gQ3nQKGqIky4KdCcHQ">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/reasforever/sets/bynge">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Ventilator -->
+                    <div class="fade art_img art_row2 art_col2">
+                        <img src="./images/art/commissions/vent.png">
+                        <p class="art_description">
+                            <i>ventilator</i> (w/ <a class="link" href="https://instagram.com/reasleft">reas</a>)
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/reasleft">reas</a>
+                            <br>
+                            2021
+                            <br>
+                            <a class="link" href="https://open.spotify.com/track/7ADuOfEijaXhw3OQFfvj0v?si=ebf9ca2c64cc4a16">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/reasforever/ventilator-prod">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Burner -->
+                    <div class="fade art_img art_row2 art_col3">
+                        <img src="./images/art/commissions/burner.png">
+                        <p class="art_description">
+                            <i>burner</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/reasleft">reas</a>
+                            <br>
+                            2020
+                            <br>
+                            <a class="link" href="https://open.spotify.com/track/309X212xIs7ZRHk6kb3t23?si=acb9fd7425974417">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/reasforever/burner">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Seed -->
+                    <div class="fade art_img art_row3 art_col1">
+                        <img src="./images/art/commissions/seed.png">
+                        <p class="art_description">
+                            <i>seed</i> (w/ <a class="link" href="https://www.instagram.com/sleepyfuckedwithit">sleepy</a>)
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/preyforpan">preyforpan</a>
+                            <br>
+                            2020
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/not-the-same-ep/1621332130">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/album/4bT9MhrOaQ7uwN1WpzKXC1?si=iJeokaQoSJ-3qMhNQWlGbw">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/scarletrager/sets/not-the-same-pt-1">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- New York -->
+                    <div class="fade art_img art_row3 art_col2">
+                        <img src="./images/art/commissions/ny.png">
+                        <p class="art_description">
+                            <i>new york</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/reasleft">reas</a>
+                            <br>
+                            2020
+                            <br>
+                            <a class="link" href="https://open.spotify.com/track/1tFBedMteH1EQxu74LpEIS?si=3cd70b828fc148ed">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/reasforever/new-york">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Hopeless Romantic -->
+                    <div class="fade art_img art_row3 art_col3">
+                        <img src="./images/art/commissions/hr.png">
+                        <p class="art_description">
+                            <i>hopeless romantic</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/preyforpan">preyforpan</a>
+                            <br>
+                            2020
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/hopeless-romantic/1531220413?i=1531220414">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/7go1vQvBRHhIxYAV5HtRTk?si=aff159fbba714fd9">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/panofthe3/hopeless-romantic-prod-rali">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Pressure -->
+                    <div class="fade art_img art_row4 art_col1">
+                        <img src="./images/art/commissions/pressure.png">
+                        <p class="art_description">
+                            <i>pressure</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/preyforpan">preyforpan</a>
+                            <br>
+                            2020
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/pressure/1529516995?i=1529516996">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/725dTEQcMD2Rk7xvBSr8iO?si=0c1298944a33491a">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/panofthe3/pressure-prod-rali">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Hold Over Heaven 2 -->
+                    <div class="fade art_img art_row4 art_col2">
+                        <img src="./images/art/commissions/hoh2.png">
+                        <p class="art_description">
+                            <i>hold over heaven 2</i> (unreleased)
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/preyforpan">preyforpan</a>
+                            <br>
+                            2020
+                        </p>
+                    </div>
+
+                    <!-- Not The Same -->
+                    <div class="fade art_img art_row4 art_col3">
+                        <img src="./images/art/commissions/nts.png">
+                        <p class="art_description">
+                            <i>not the same</i>
+                            <br>
+                            <a class="link artist_name" href="https://www.instagram.com/scarletrager/">scarlet rager</a>
+                            <br>
+                            2020
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/not-the-same-ep/1621332130">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/album/4bT9MhrOaQ7uwN1WpzKXC1?si=iJeokaQoSJ-3qMhNQWlGbw">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/scarletrager/sets/not-the-same-pt-1">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Girls Gone Wild -->
+                    <div class="fade art_img art_row5 art_col1">
+                        <img src="./images/art/commissions/ggw.png">
+                        <p class="art_description">
+                            <i>girls gone wild</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/preyforpan">preyforpan</a>
+                            <br>
+                            2020
+                            <br>
+                            <a class="link" href="https://soundcloud.com/panofthe3/girls-gone-wild-prod-tsurreal-haze">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- No Man's Peak -->
+                    <div class="fade art_img art_row5 art_col2">
+                        <img src="./images/art/commissions/nomanspeak.png">
+                        <p class="art_description">
+                            <i>no man's peak</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/preyforpan">preyforpan</a>
+                            <br>
+                            2020
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/no-mans-peak/1508532029?i=1508532031">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/3kXK0QkjDo6kOjcaRduHCQ?si=421b7fa067fe4946">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/panofthe3/no-mans-peak">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Baby Gator -->
+                    <div class="fade art_img art_row5 art_col3">
+                        <img src="./images/art/commissions/babyg.png">
+                        <p class="art_description">
+                            <i>baby gator</i> (w/ <a class="link" href="https://www.instagram.com/sleepyfuckedwithit">sleepy</a>)
+                            <br>
+                            <a class="link artist_name" href="https://www.instagram.com/sleepyfuckedwithit">sleepy</a>
+                            <br>
+                            2020
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/baby-gator/1501220640">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/album/4uzt6yPpVFux1psJwACHSo?si=5sDgccf3Q7aBym7stwM9cg">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/ozzyxem/sets/baby-gator">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Hold Over Heaven -->
+                    <div class="fade art_img art_row6 art_col1">
+                        <img src="./images/art/commissions/hoh.png">
+                        <p class="art_description">
+                            <i>hold over heaven</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/preyforpan">preyforpan</a>
+                            <br>
+                            2020
+                            <br>
+                            <a class="link" href="https://soundcloud.com/panofthe3/sets/hold-over-heaven">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Tears -->
+                    <div class="fade art_img art_row6 art_col2">
+                        <img src="./images/art/commissions/tears.png">
+                        <p class="art_description">
+                            <i>tears</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/reasleft">reas</a>
+                            <br>
+                            2019
+                            <br>
+                            <a class="link" href="https://open.spotify.com/track/0iMwJKOvwNDsh3YC7XZYGe?si=3086318924a64b81">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/reasforever/tears-prod-karegi">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Hide -->
+                    <div class="fade art_img art_row6 art_col3">
+                        <img src="./images/art/commissions/hidealt.png">
+                        <p class="art_description">
+                            <i>hide</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/reasleft">reas</a>
+                            <br>
+                            2019
+                            <br>
+                            <a class="link" href="https://open.spotify.com/track/0iMwJKOvwNDsh3YC7XZYGe?si=3086318924a64b81">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/reasforever/hide">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Hide (Original) -->
+                    <div class="fade art_img art_row7 art_col1">
+                        <img src="./images/art/commissions/hide.png">
+                        <p class="art_description">
+                            <i>hide</i> (orignial)
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/reasleft">reas</a>
+                            <br>
+                            2019
+                            <br>
+                            <a class="link" href="https://open.spotify.com/track/0iMwJKOvwNDsh3YC7XZYGe?si=3086318924a64b81">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/reasforever/hide">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Valkyrie -->
+                    <div class="fade art_img art_row7 art_col2">
+                        <img src="./images/art/commissions/valk.png">
+                        <p class="art_description">
+                            <i>valkyrie</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/preyforpan">preyforpan</a>
+                            <br>
+                            2019
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/valkyrie/1509744533?i=1509744534">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/1D0j5LKyxaXuWkmJIxSAho?si=4d55f5f383fc42c5">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/panofthe3/valkyrie">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Till The End -->
+                    <div class="fade art_img art_row7 art_col3">
+                        <img src="./images/art/commissions/tilltheend.png">
+                        <p class="art_description">
+                            <i>till the end</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/preyforpan">preyforpan</a>
+                            <br>
+                            2019
+                            <br>
+                            <a class="link" href="https://music.apple.com/us/album/till-the-end/1509744925?i=1509744927">
+                                <i class="icon-apple-music icon"></i>
+                            </a>
+                            <a class="link" href="https://open.spotify.com/track/7hZJfc65jbnS8D431q36Vj?si=ce01b90ff0bd4985">
+                                <i class="icon-spotify icon"></i>
+                            </a>
+                            <a class="link" href="https://soundcloud.com/panofthe3/till-the-end">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Death In Bucharest -->
+                    <div class="fade art_img art_row8 art_col1">
+                        <img src="./images/art/commissions/dib.png">
+                        <p class="art_description">
+                            <i>death in bucharest</i> <br style="margin: auto;">
+                            (unfinished & cancelled)
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/reasleft">reas</a>
+                            <br>
+                            2019
+                            <br>
+                            <a class="link" href="https://soundcloud.com/reasforever/exit-hands-prod-reas">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- If She Falls For Fenrir -->
+                    <div class="fade art_img art_row8 art_col2">
+                        <img src="./images/art/commissions/panscover.png">
+                        <p class="art_description">
+                            <i>if she falls for fenrir</i>
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/preyforpan">preyforpan</a>
+                            <br>
+                            2019
+                            <br>
+                            <a class="link" href="https://soundcloud.com/panofthe3/sets/if-she-falls-for-fenrir">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- If She Falls For Fenrir (Original)-->
+                    <div class="fade art_img art_row8 art_col3">
+                        <img src="./images/art/commissions/isfff og.png">
+                        <p class="art_description">
+                            <i>if she falls for fenrir</i> <br style="margin: auto;">
+                            (unfinished concept)
+                            <br>
+                            <a class="link artist_name" href="https://instagram.com/preyforpan">preyforpan</a>
+                            <br>
+                            2018
+                            <br>
+                            <a class="link" href="https://soundcloud.com/panofthe3/sets/if-she-falls-for-fenrir">
+                                <i class="icon-soundcloud icon"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

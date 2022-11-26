@@ -8,6 +8,7 @@
     <title>rali</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="music_styles.css">
+    <link rel="stylesheet" href="./fonts/icons/css/website_icons.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -30,23 +31,32 @@
             </div>
             <div class="navbar_menu">
                 <li class="navbar_item">
-                    <a href="#home" class="navbar_links">
-                        home
-                    </a>
-                </li>
-                <li class="navbar_item">
                     <a href="#solo_music" class="navbar_links">
-                        solo
+                        <i class="icon-personal"></i>
+                        <div class="nav_text">solo music</div>
                     </a>
                </li>
                <li class="navbar_item">
                     <a href="#placements" class="navbar_links">
-                        placements
+                        <i class="icon-handshake"></i>
+                        <div class="nav_text">placements</div>
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="./index.html" class="navbar_links">
+                        <i class="icon-house-solid"></i>
                     </a>
                 </li>
                 <li class="navbar_btn">
                     <a href="./contact.html" class="button">
+                        <i class="icon-envelope"></i>
                         contact me
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#home" class="navbar_links">
+                        <i class="icon-arrow-up-solid"></i>
+                        <div class="nav_text">top</div>
                     </a>
                 </li>
             </div>
@@ -54,12 +64,27 @@
     </nav>
 
     <!-- Main Splash Screen -->
-    <div class="music_home" id="home">
+    <div class="music_home home" id="home">
         <div class="home_container">
             <div class="home_content">
                 <h1 class="home_heading">music</h1>
-                <p class="home_description">check out my</p>
-                <div class="home_links--container">
+                <h5 class="home_description">listen to me on</h5>
+                <div class="home_links--container icons">
+                    <a class="home_btn--container link" href="https://music.apple.com/us/artist/rali/1489656582">
+                        <i class="icon-apple-music icon"></i>
+                        <!-- <div class="link_text">apple music</div> -->
+                    </a>
+                    <a class="home_btn--container link" href="https://open.spotify.com/artist/3ewxxQBBetFSlJbuSP5Wka">
+                        <i class="icon-spotify icon"></i>
+                        <!-- <div class="link_text">spotify</div> -->
+                    </a>
+                    <a class="home_btn--container link" href="https://soundcloud.com/prodrali">
+                        <i class="icon-soundcloud icon"></i>
+                        <!-- <div class="link_text">soundcloud</div> -->
+                    </a>
+                </div>
+                <p class="home_description music_sublinks">check out my</p>
+                <div class="home_links--container music_sublinks">
                     <a class="home_btn--container link" href="#solo_music">solo music</a>
                     <a class="home_btn--container link" href="#placements">placements</a>
                 </div>
@@ -75,7 +100,7 @@
                     <h1>solo music</h1>
                 </div>
                 <p class="music_description">produced, composed, mixed, and mastered by me</p>
-                <p class="music_description">all the cover art is also done by me</p>
+                <p class="music_description">all cover art by me</p>
 
                 <div class="recent_music">
 
@@ -85,11 +110,12 @@
 
                     <div class="music_emb--container">
 
+                        <!-- Built to Break, single -->
                         <div class="spotify music_song music_row1 music_col1">
                             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3rmt9r8Lygo1OIOIPXgZNe?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="apple music_song music_row1 music_col2">
-                            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/built-to-break/1651015888?i=1651015889"></iframe>
+                            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/built-to-break/1651015888?i=1651015889"></iframe>
                         </div>
                         <div class="date_label music_row1">
                             <p class="music_text">
@@ -114,7 +140,7 @@
                             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6pjAQfzhsYsy6wEq4pdm1M?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="apple music_album music_row1 music_col2">
-                            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/yeah-whatever-ep/1635512449"></iframe>
+                            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/yeah-whatever-ep/1635512449"></iframe>
                         </div>
                         <div class="date_label music_row1">
                             <p class="music_text">
@@ -153,7 +179,7 @@
                             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7aM8wwWuPPuxF5eR7bGiY8?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="apple music_song music_row4 music_col2">
-                            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/aneurysm/1520487849?i=1520487852"></iframe>                        </div>
+                            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/aneurysm/1520487849?i=1520487852"></iframe>                        </div>
                         <div class="date_label music_row4">
                             <p class="music_text">
                                 7 / 10 / 2020
@@ -165,7 +191,7 @@
                             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7j9oMtQWEl1R085sDn6P1j?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="apple music_song music_row5 music_col2">
-                            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/december/1486684027?i=1486684028"></iframe>
+                            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/december/1486684027?i=1486684028"></iframe>
                         </div>
                         <div class="date_label music_row5">
                             <p class="music_text">
@@ -188,65 +214,80 @@
                     <h1>placements</h1>
                 </div>
                 <p class="music_description">songs released by others, produced by me</p>
-                <div class="music_text">
-                    <h2>recent releases</h2>
-                </div>
-                <div class="music_emb--container">
-                    <div class="soundcloud music_song music_row1 music_col1">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1129291750&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+                <div class="streaming_placements">
+                    <div class="music_text">
+                        <h2>streaming</h2>
                     </div>
-                    <div class="soundcloud music_song music_row1 music_col2">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1126777780&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row2 music_col1">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1105809400&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row2 music_col2">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1102240756&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                </div>
-                <div class="music_text">
-                    <h2>older releases</h2>
-                </div>
-                <div class="music_emb--container">
-                    <div class="soundcloud music_song music_row1 music_col1">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1066067233&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row1 music_col2">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1066067797&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row2 music_col1">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1065388174&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row2 music_col2">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1060860520&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row3 music_col1">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/875636245&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row3 music_col2">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/875632684&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row4 music_col1">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/846267361&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row4 music_col2">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/786054196&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row5 music_col1">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/786054073&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row5 music_col2">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/786055183&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="soundcloud music_song music_row6 music_col1">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/764037772&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    <div class="music_emb--container">
+                        <!-- Spotify -->
+                        <div class="spotify music_album music_row1 music_col1">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7qKBOnEe9S919J2kncZug0?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                        <!-- Apple Music -->
+                        <div class="apple music_album music_row1 music_col2">
+                            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/prod-rali/pl.u-Ymb09amhg1v8jK"></iframe>
+                        </div>
                     </div>
                 </div>
-                <br/><br/><br/>
+
+                <div class="soundcloud_placements">
+                    <div class="music_text">
+                        <h2>soundcloud</h2>
+                    </div>
+                    <div class="music_emb--container">
+                        <div class="soundcloud music_song music_row1 music_col1">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1129291750&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row1 music_col2">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1126777780&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row2 music_col1">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1105809400&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row2 music_col2">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1102240756&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row3 music_col1">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1066067233&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row3 music_col2">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1066067797&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row4 music_col1">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1065388174&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row4 music_col2">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1060860520&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row5 music_col1">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/875636245&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row5 music_col2">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/875632684&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row6 music_col1">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/846267361&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row6 music_col2">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/786054196&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row7 music_col1">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/786054073&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row7 music_col2">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/786055183&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                        <div class="soundcloud music_song music_row8 music_col1">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/764037772&color=%2362d672&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <br/><br/><br/>
                 <div class="music_description">
                     you can find <a class="link" href="https://www.instagram.com/reasleft/">reas</a>, <a class="link" href="https://www.instagram.com/preyforpan/">pan</a>, and <a class="link" href="https://www.instagram.com/lame.wav/">lame.wav</a> on instagram and all streaming services.
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

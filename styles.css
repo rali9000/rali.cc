@@ -422,6 +422,10 @@ html::-webkit-scrollbar {
     padding: 0 50px;
 }
 
+.nav_text {
+    display: none;
+}
+
 #navbar_logo {
     color: var(--tertiary-color-light);
     /* background-color: var(--tertiary-color-light);
@@ -503,7 +507,6 @@ html::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
     width: 100%;
     height: 100%;
 }
@@ -549,12 +552,13 @@ html::-webkit-scrollbar {
 
 .link:hover {
     color: var(--tertiary-color);
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
-/* .link i {
-    font-size: 2rem;
-} */
+.link:active {
+    color: var(--accent-color-light);
+    transition: all 0.1s ease-in-out;
+}
 
 @media screen and (max-width: 960px) {
 
@@ -566,6 +570,11 @@ html::-webkit-scrollbar {
         width: 100%;
         max-width: 1300px;
         padding: 0;
+    }
+
+    .nav_text {
+        display: flex;
+        justify-content: center;
     }
 
     .navbar_menu {
@@ -589,7 +598,6 @@ html::-webkit-scrollbar {
         transition: all 0.5s ease-in-out;
         z-index: 99;
         height: 65vh;
-        font-size: 1.6rem;
     }
 
     #navbar_logo {
@@ -607,10 +615,12 @@ html::-webkit-scrollbar {
 
     .navbar_item {
         width: 100%;
+        font-size: 5em;
     }
 
     .navbar_links {
         text-align: center;
+        align-items: bottom;
         padding: 2rem;
         width: 100%;
         display: table;
@@ -626,22 +636,18 @@ html::-webkit-scrollbar {
     #mobile-menu {
         position: absolute;
         top: 20%;
-        right: 5%;
+        right: 10%;
         transform: translate(5%, 20%);
-    }
-
-    .navbar_btn {
-        padding-bottom: 2rem;
     }
 
     .button {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-        border-radius: 32px;
+        /* width: 80%;
+        height: 80px; */
+        /* margin: 0;
+        border-radius: 32px; */
     }
 
     .navbar_toggle .bar{
@@ -668,6 +674,12 @@ html::-webkit-scrollbar {
 .home {
     background-color: var(--main-color);
     padding: 200px, 0;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 .home.bg {
@@ -743,14 +755,24 @@ html::-webkit-scrollbar {
     border-bottom: .25rem solid var(--accent-color);
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    padding: 0.5rem;
+    font-size: 3rem;
+}
+
 @media screen and (max-width: 768px){
     html {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 .home_links--container {
-    margin: 2rem 0;
+    margin: 0;
 }
 
 .home_btn--container {
@@ -819,8 +841,14 @@ html::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 960px) {
+
     html {
-        font-size: 10px;
+        font-size: 8px;
+    }
+
+    .home, .music_home, .art_home {
+        background-size: 0%!important;
+        /* background-attachment: scroll!important; */
     }
 }
 
@@ -878,7 +906,7 @@ html::-webkit-scrollbar {
 @media screen and (max-width: 960px) {
     
     .about_container {
-        height: 100vh;
+        height: 100%;
     }
 
     .about_img img {

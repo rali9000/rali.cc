@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="art_styles.css">
     <link rel="stylesheet" href="music_styles.css">
+    <link rel="stylesheet" href="./fonts/icons/css/website_icons.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -37,40 +38,41 @@
                 <span class="bar"></span>
             </div>
             <div class="navbar_menu">
-                <li class="navbar_item">
-                    <a href="#home" class="navbar_links">
-                        <i class="icon-house-solid"></i>
-                        home
-                    </a>
-                </li>
+
                 <li class="navbar_item">
                     <a href="#about" class="navbar_links">
                         <i class="icon-circle-info-solid"></i>
-                        about
+                        <div class="nav_text">about</div>
                     </a>
                 </li>
                 <li class="navbar_item">
                     <a href="#art" class="navbar_links">
                         <i class="icon-image-solid"></i>
-                        art
+                        <div class="nav_text">art</div>
                     </a>
                 </li>
                 <li class="navbar_item">
                     <a href="#music" class="navbar_links">
                         <i class="icon-music-solid"></i>
-                        music
+                        <div class="nav_text">music</div>
                     </a>
                 </li>
                 <li class="navbar_item">
                     <a href="#projects" class="navbar_links">
-                        <i class="icon-code-solid"></i>
-                        projects
+                        <i class="icon-code-solid" style="margin-right: .5rem;"></i>
+                        <div class="nav_text">projects</div>
                     </a>
                 </li>
                 <li class="navbar_btn">
                     <a href="./contact.html" class="button">
                         <i class="icon-envelope"></i>
                         contact me
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#home" class="navbar_links">
+                        <i class="icon-arrow-up-solid"></i>
+                        <div class="nav_text">top</div>
                     </a>
                 </li>
             </div>
@@ -106,10 +108,9 @@
                     <p>
                         Ali is a Moroccan American student, artist, programmer, and producer based in Columbus, Ohio.
                         Currently attending the Ohio State University, he's pursuing a degree in CSE with an art minor.
-                        Ali works with acrylic paint, oil pastel, charcoal, and digital mediums.
+                        This website was completely coded by me! I started programming in 2018, beginning with HTML, and CSS. I have since learned much about Java, C, and x86-64 Assembly in school.
                         As a producer I have many placements and have been producing since 2016, in which time I have developed my own style. 
                         I also make my own solo electronic music.
-                        This website was completely coded by me! I started programming in 2018, beginning with HTML, I have since learned much about Java in school, and CSS on my own time.
                         If you have any questions feel free to <a href="./contact.html" class="link">contact me</a>.
                     </p>
                 </div>
@@ -132,22 +133,22 @@
                 </div>
                 <div class="art_img--container">
                     <div class="art_img art_row1 art_col1">
-                        <img src="./images/art/art (2).png" alt="charcoal figure drawing">
+                        <img src="./images/art/personal/art (2).png" alt="charcoal figure drawing">
                     </div>
                     <div class="art_img art_row1 art_col2">
-                        <img src="./images/art/art (6).png" alt="ink figure drawing">
+                        <img src="./images/art/personal/art (6).png" alt="ink figure drawing">
                     </div>
                     <div class="art_img art_row1 art_col3">
-                        <img src="./images/art/art (5).png" alt="ink/graphite portrait study">
+                        <img src="./images/art/personal/art (5).png" alt="ink/graphite portrait study">
                     </div>
                     <div class="art_img art_row2 art_col1">
-                        <img src="./images/art/art (3).png" alt="charcoal figure drawing">
+                        <img src="./images/art/personal/art (3).png" alt="charcoal figure drawing">
                     </div>
                     <div class="art_img art_row2 art_col2">
-                        <img src="./images/art/art (1).png" alt="self-portrait">
+                        <img src="./images/art/personal/art (1).png" alt="self-portrait">
                     </div>
                     <div class="art_img art_row2 art_col3">
-                        <img src="./images/art/art (4).png" alt="ink figure study">
+                        <img src="./images/art/personal/art (4).png" alt="ink figure study">
                     </div>
                 </div>
             </div>
@@ -169,13 +170,39 @@
                 </div>
                 <div class="music_emb--container">
 
+                    <!-- Built to Break, Single -->
                     <div class="spotify music_song music_row1 music_col1">
                         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3rmt9r8Lygo1OIOIPXgZNe?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
                     <div class="apple music_song music_row1 music_col2">
-                        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/built-to-break/1651015888?i=1651015889"></iframe>
+                        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/built-to-break/1651015888?i=1651015889"></iframe>
                     </div>
 
+                    <!-- Yeah Whatever, EP -->
+                    <div class="spotify music_album music_row2 music_col1">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6pjAQfzhsYsy6wEq4pdm1M?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="apple music_album music_row2 music_col2">
+                        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/yeah-whatever-ep/1635512449"></iframe>
+                    </div>
+
+                </div>
+                <div class="music_text" style="margin-top: 2rem;">
+                    <h2>follow me on</h2>
+                    <p class="icons">
+                        <a class="link" href="https://music.apple.com/us/artist/rali/1489656582" style="padding: 0 2rem;">
+                            <i class="icon-apple-music icon"></i>
+                            <!-- apple music -->
+                        </a>
+                        <a class="link" href="https://open.spotify.com/artist/3ewxxQBBetFSlJbuSP5Wka" style="padding: 0 2rem;">
+                            <i class="icon-spotify icon"></i>
+                            <!-- spotify -->
+                        </a>
+                        <a class="link" href="https://soundcloud.com/prodrali" style="padding: 0 2rem;">
+                            <i class="icon-soundcloud icon"></i>
+                            <!-- soundcloud -->
+                        </a>
+                     </p>
                 </div>
             </div>
         </div>
@@ -190,8 +217,14 @@
                 </div>
                 <div class="projects_text">
                     <p>
-                        coming soon...
-                     </p>
+                        <i>coming soon...</i>
+                    </p>
+                </div>
+                <div class="projects_text">
+                    check out my code 
+                    <a href="https://github.com/rali9000" class="link">
+                        github<i class="icon-github-circled"></i>
+                    </a>
                 </div>
             </div>
         </div>
