@@ -16,3 +16,6 @@ This current version is under construction! Currently past the home page I am us
 * Some pages still use pages from an older version of the website
 * Programming and about page yet to be created
 * Placeholder images from unsplash to be replaced
+
+### Version History:
+* <a href="https://github.com/rali9000/rali.cc/tree/rali.cc-v2"> Version 2.0 </a>
