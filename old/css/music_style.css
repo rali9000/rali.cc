@@ -1,0 +1,82 @@
+.music {
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    background-color: var(--main-color);
+    gap: 1rem;
+    grid-template-rows: 7.25rem 1fr 7.25rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.music .video_container, .music .cover_container {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* border-radius: 1rem; */
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+}
+
+
+.music .video_container video, .music .cover_container img {
+    min-height: 100%;
+    width: 100%;
+}
+
+.music .body_text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* .music .video_container:hover .body_text {
+    background-color: var(--main-color);
+    opacity: 100;
+} */
+
+.label .body_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 4rem 3rem;
+}
+
+.title {
+    line-height: 1.85rem;
+}
+
+.info {
+    /* margin-top: -1.85rem; */
+    font-size: 1rem;
+    line-height: 0.35rem;
+}
+
+.title, .info {
+    display: flex;
+
+
+}
+
+.playlist {
+    height: 450px;
+}
+
+.playlist iframe {
+    border-radius:1rem
+}
+
+@media screen and (max-width: 960px) {
+
+    .info {
+        line-height: 1rem;
+    }
+
+    .streaming_placements .grid_container {
+        grid-template-columns: 1fr!important;
+    }
+}
