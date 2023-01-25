@@ -1,3 +1,3 @@
 # rali.cc
-Website can be found at https://rali.cc/.
-A repository containing all the code used for my personal/portfolio website, without including the high quality assets.
+Completed version 2.0 of my website!
+I am currently working on a version 3.0!
