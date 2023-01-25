@@ -6,9 +6,9 @@ This current version is under construction! Currently past the home page I am us
 
 ### Features:
 * Fully responsive design
-  * Responsive grid
+  * Responsive grids
   * Responsive nav bar
-  * Responsive 
+  * Responsive text size
 * Dynamic landing page
 * Light and dark mode switch (that can remember your settings)
 
