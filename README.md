@@ -20,3 +20,5 @@ This current version is under construction! Currently past the home page I am us
 ### Version History:
 * <a href="https://github.com/rali9000/rali.cc/tree/rali.cc-v2"> Version 2.0 </a>
 * <a href="https://github.com/rali9000/rali.cc/tree/rali.cc-v1"> Version 1.0 </a>
+
+### *Assets not included*
