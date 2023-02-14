@@ -29,4 +29,4 @@ This current version is under construction! Known bugs and issues are listed bel
 * <a href="https://github.com/rali9000/rali.cc/tree/rali.cc-v2"> Version 2.0 </a>
 * <a href="https://github.com/rali9000/rali.cc/tree/rali.cc-v1"> Version 1.0 </a>
 
-## <h2 align="center"> https://rali.cc/ </h2>
+# <h2 align="center"> https://rali.cc/ </h2>
