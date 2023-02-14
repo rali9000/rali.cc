@@ -12,7 +12,9 @@ This current version is under construction! Currently past the home page I am us
   * Responsive nav bar
   * Responsive text size
 * Dynamic landing page
-* Light and dark mode switch (that can remember your settings)
+* Light and dark modes
+  * Preferences are saved between pages and sessions
+  * If no preferences are found, defaults to system theme
 
 ### Known issues:
 * Programming page redirects to my github
