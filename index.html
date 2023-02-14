@@ -7,18 +7,27 @@
     <title>rali</title>
     <link rel="stylesheet" href="./assets/fonts/icons/css/website_icons.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/nav_style.css">
     <link rel="stylesheet" href="./css/animation.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/site.webmanifest">
-</head>
-<body data-nav="false">
+    <link rel="stylesheet" href="./css/home_style.css">
 
-    <div class="container">
-        <div class="links">
-            <div class="stream-links">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="./favicon/browserconfig.xml">
+    <meta name="theme-color" content="#24201e">
+
+</head>
+<body data-nav="false" loading="lazy">
+
+    <div class="main home">
+        <div class="hero-links-wrapper">
+            <div class="hero-links">
                 <a href="https://open.spotify.com/artist/3ewxxQBBetFSlJbuSP5Wka?si=03es_XwmTkWcFxYbqHsl3A" class="link">
                     <i class="icon-spotify"></i>
                 </a>
@@ -36,116 +45,119 @@
                 </a>
             </div>
     
-            <button class="color-mode" id="color-toggle" type="button">
+            <button class="color-mode link" id="color-toggle" type="button">
                 <i class="icon-moon" id="toggle-icon"></i>
             </button>
         </div>
 
-        <div class="content">
+        <div class="home-content">
             <div class="logo">
                 <i class="icon-logo"></i>
             </div>
 
-            <div class="grid_container">
+            <!-- SCROLLING IMAGES -->
+            <div class="scroll_grid_container">
                 <div id="permas">
-                    <img src="./assets/images/art/d/catb.png">
-                    <img src="./assets/images/art/d/atrophy og.png">
-                    <img src="./assets/images/art/d/sw final.png">
-                    <img src="./assets/images/art/d/scrapped v3.png">
-                    <img src="./assets/images/art/d/yeah whatever final.png">
-                    <img src="./assets/images/art/d/old v1.png">
-                    <img src="./assets/images/art/d/old v4.png">
-                    <img src="./assets/images/art/d/scrapped v2.png">
+                    <!-- Digital Art -->
+                    <img draggable="false" src="./assets/images/art/d/catb.png">
+                    <img draggable="false" src="./assets/images/art/d/atrophy og.png">
+                    <img draggable="false" src="./assets/images/art/d/sw final.png">
+                    <img draggable="false" src="./assets/images/art/d/scrapped v3.png">
+                    <img draggable="false" src="./assets/images/art/d/yeah whatever final.png">
+                    <img draggable="false" src="./assets/images/art/d/old v1.png">
+                    <img draggable="false" src="./assets/images/art/d/old v4.png">
+                    <img draggable="false" src="./assets/images/art/d/scrapped v2.png">
 
-                    <img src="./assets/images/art/d/catb.png">
-                    <img src="./assets/images/art/d/atrophy og.png">
-                    <img src="./assets/images/art/d/sw final.png">
-                    <img src="./assets/images/art/d/scrapped v3.png">
-                    <img src="./assets/images/art/d/yeah whatever final.png">
-                    <img src="./assets/images/art/d/old v1.png">
-                    <img src="./assets/images/art/d/old v4.png">
-                    <img src="./assets/images/art/d/scrapped v2.png">
+                    <!-- Duplicate for smooth scroll -->
+                    <img draggable="false" src="./assets/images/art/d/catb.png">
+                    <img draggable="false" src="./assets/images/art/d/atrophy og.png">
+                    <img draggable="false" src="./assets/images/art/d/sw final.png">
+                    <img draggable="false" src="./assets/images/art/d/scrapped v3.png">
+                    <img draggable="false" src="./assets/images/art/d/yeah whatever final.png">
+                    <img draggable="false" src="./assets/images/art/d/old v1.png">
+                    <img draggable="false" src="./assets/images/art/d/old v4.png">
+                    <img draggable="false" src="./assets/images/art/d/scrapped v2.png">
                 </div>
 
                 <div id="permas">
-                    <img src="./assets/images/art/t/art (3).png">
-                    <img src="./assets/images/art/t/art (2).png">
-                    <img src="./assets/images/art/t/art (6).png">
-                    <img src="./assets/images/art/t/art (1).png">
-                    <img src="./assets/images/art/t/art (5).png">
-                    <img src="./assets/images/art/t/art (8).png">
-                    <img src="./assets/images/art/t/art (4).png">
-                    <img src="./assets/images/art/t/art (7).png">
+                    <!-- Traditional Art -->
+                    <img draggable="false" src="./assets/images/art/t/art (3).png">
+                    <img draggable="false" src="./assets/images/art/t/art (2).png">
+                    <img draggable="false" src="./assets/images/art/t/art (6).png">
+                    <img draggable="false" src="./assets/images/art/t/art (1).png">
+                    <img draggable="false" src="./assets/images/art/t/art (5).png">
+                    <img draggable="false" src="./assets/images/art/t/art (8).png">
+                    <img draggable="false" src="./assets/images/art/t/art (4).png">
+                    <img draggable="false" class="wide" src="./assets/images/art/t/art (7).png">
 
-                    <img src="./assets/images/art/t/art (3).png">
-                    <img src="./assets/images/art/t/art (2).png">
-                    <img src="./assets/images/art/t/art (6).png">
-                    <img src="./assets/images/art/t/art (1).png">
-                    <img src="./assets/images/art/t/art (5).png">
-                    <img src="./assets/images/art/t/art (8).png">
-                    <img src="./assets/images/art/t/art (4).png">
-                    <img src="./assets/images/art/t/art (7).png">
+
+                    <!-- Duplicate for smooth scroll -->
+                    <img draggable="false" src="./assets/images/art/t/art (3).png">
+                    <img draggable="false" src="./assets/images/art/t/art (2).png">
+                    <img draggable="false" src="./assets/images/art/t/art (6).png">
+                    <img draggable="false" src="./assets/images/art/t/art (1).png">
+                    <img draggable="false" src="./assets/images/art/t/art (5).png">
+                    <img draggable="false" src="./assets/images/art/t/art (8).png">
+                    <img draggable="false" src="./assets/images/art/t/art (4).png">
+                    <img draggable="false" class="wide" src="./assets/images/art/t/art (7).png">
                 </div>
 
                 <div id="permas">
-                    <img src="./assets/images/art/c/apb.png">
-                    <img src="./assets/images/art/c/panscover.png">
-                    <img src="./assets/images/art/c/hidealt.png">
-                    <img src="./assets/images/art/c/wr.png">
-                    <img src="./assets/images/art/c/bynge.png">
-                    <img src="./assets/images/art/c/ny.png">
-                    <img src="./assets/images/art/c/hoh2.png">
-                    <img src="./assets/images/art/c/nts.png">
+                    <!-- Commissions -->
+                    <img draggable="false" src="./assets/images/art/c/apb.png">
+                    <img draggable="false" src="./assets/images/art/c/panscover.png">
+                    <img draggable="false" src="./assets/images/art/c/hidealt.png">
+                    <img draggable="false" src="./assets/images/art/c/wr.png">
+                    <img draggable="false" src="./assets/images/art/c/bynge.png">
+                    <img draggable="false" src="./assets/images/art/c/ny.png">
+                    <img draggable="false" src="./assets/images/art/c/hoh2.png">
+                    <img draggable="false" src="./assets/images/art/c/nts.png">
 
-                    <img src="./assets/images/art/c/apb.png">
-                    <img src="./assets/images/art/c/panscover.png">
-                    <img src="./assets/images/art/c/hidealt.png">
-                    <img src="./assets/images/art/c/wr.png">
-                    <img src="./assets/images/art/c/bynge.png">
-                    <img src="./assets/images/art/c/ny.png">
-                    <img src="./assets/images/art/c/hoh2.png">
-                    <img src="./assets/images/art/c/nts.png">
+                    <!-- Duplicate for smooth scroll -->
+                    <img draggable="false" src="./assets/images/art/c/apb.png">
+                    <img draggable="false" src="./assets/images/art/c/panscover.png">
+                    <img draggable="false" src="./assets/images/art/c/hidealt.png">
+                    <img draggable="false" src="./assets/images/art/c/wr.png">
+                    <img draggable="false" src="./assets/images/art/c/bynge.png">
+                    <img draggable="false" src="./assets/images/art/c/ny.png">
+                    <img draggable="false" src="./assets/images/art/c/hoh2.png">
+                    <img draggable="false" src="./assets/images/art/c/nts.png">
                 </div>
             </div>
         </div>
     </div>
 
-    <nav id="nav">
+    <nav class="home" id="nav">
         <div id="nav-links">
-            <!-- <a href="#" class="nav-link link">
-                <h2 class="nav-link-label">home</h2>
-                <img src="https://images.unsplash.com/photo-1672411164027-f1c3fb8dbd5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                class="nav-link-image">
-            </a> -->
-            <a href="./old/music.html" class="nav-link link">
+            <a href="./music.html" class="nav-link link">
                 <h2 class="nav-link-label">music</h2>
-                <img src="./assets/images/music_background.png"
+                <img draggable="false" loading="lazy" src="./assets/images/music_background.png"
                 class="nav-link-image">
             </a>
-            <a href="./old/art.html" class="nav-link link">
+            <a href="./art.html" class="nav-link link">
                 <h2 class="nav-link-label">art</h2>
-                <img src="./assets/images/art_background.png"
+                <img draggable="false" loading="lazy" src="./assets/images/art_background.png"
                 class="nav-link-image">
             </a>
             <a href="./programming.html" class="nav-link link">
                 <h2 class="nav-link-label">programming</h2>
-                <img src="https://images.unsplash.com/photo-1672472249806-e3f4bc3eac6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                <img draggable="false" loading="lazy" src="./assets/images/programming_background.png"
                 class="nav-link-image">
             </a>
-            <a href="#" class="nav-link link">
+            <a href="./about.html" class="nav-link link">
                 <h2 class="nav-link-label">about</h2>
-                <img src="https://images.unsplash.com/photo-1672478865829-a0860d97919e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                <img draggable="false" loading="lazy" src="./assets/images/about_nav.png"
                 class="nav-link-image">
             </a>
-            <a href="./old/contact.html" class="nav-link link">
+            <a href="./contact.html" class="nav-link link">
                 <h2 class="nav-link-label">contact</h2>
-                <img src="https://images.unsplash.com/photo-1672420877594-99a77c4dff5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                <img draggable="false" loading="lazy" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gmail_GM3.width-1000.format-webp.webp"
                 class="nav-link-image">
             </a>
         </div>
     </nav>
 
-    <button id="nav-toggle" type="button" onclick="toggleNav()">
+    <button class="home" id="nav-toggle" type="button" onclick="toggleNav()">
         <i class="fa-solid fa-bars nav-open"></i>
         <i class="fa-solid fa-xmark nav-close"></i>
     </button>

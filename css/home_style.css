@@ -1,0 +1,147 @@
+.home-content {
+    height: 100dvh;
+    width: 100dvw;
+    overflow: hidden;
+}
+
+.color-mode {
+    /* color: var(--body-text-color); */
+    padding: 0 clamp(1rem, 2dvw, 2rem);
+    font-size: 2em;
+    text-shadow: 0.25rem 0.3rem 1rem rgba(0, 20, 30, 0.5);
+    z-index: 10;
+}
+
+.color-mode i {
+    width: 100%;
+    text-align: center;
+}
+
+/* Grid container for scrolling images */
+.scroll_grid_container {
+    display: grid;
+    position: relative;
+    height: 100dvh;
+    width: 100dvw;
+    grid-template-columns: repeat(3, 30dvw);
+    padding: 0 3dvw;
+    gap: 0 2dvw;
+    align-items: center;
+    bottom: -100dvh;
+    z-index: 5;
+
+    animation-name: start-up-Y;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/* Offsetting scroll speed of each column */
+.scroll_grid_container div:nth-child(1) {
+    animation-duration: 26s;
+}
+
+.scroll_grid_container div:nth-child(2) {
+    animation-duration: 21s;
+}
+
+.scroll_grid_container div:nth-child(3) {
+    animation-duration: 23s;
+}
+
+.main.home .hero-links-wrapper {
+    width: 100dvw;
+    height: 7.5dvh;
+    top: 92.5dvh;
+    flex-direction: row;
+}
+
+.main.home .hero-links-wrapper::after {
+    content: '';
+    background: linear-gradient(var(--main-color-transparent), var(--main-color) 85%, var(--main-color));
+    width: 100dvw;
+    height: 20dvh;
+    position: absolute;
+    bottom: -32px;
+    filter: none;
+}
+
+
+/* Grid of rows within the columns
+ *
+ * This had to be done instead of one grid with rows AND columns so that each column can scroll at different speeds.
+ */
+#permas {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    position: relative;
+
+    animation-name: scroll-Y;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+}
+
+#permas img{
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1dvh;
+}
+
+#permas img.wide {
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+    .scroll_grid_container {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 30dvh);
+        padding: 3dvh 0;
+        gap: 2dvh 0;
+        bottom: 0;
+        height: 100dvh;
+        right: -100dvw;
+
+        animation-name: start-up-X;
+    }
+
+    #permas {
+        flex-direction: row;
+        height: 100%;
+        width: auto;
+        justify-content: baseline;
+
+        animation-name: scroll-X;
+    }
+
+    #permas img{
+        margin-bottom: 0;
+        margin-right: 5dvw;
+    }
+
+    #permas img.wide {
+        display: block;
+    }
+    
+
+    .scroll_grid_container div:nth-child(1) {
+        animation-duration: 22s;
+    }
+    
+    .scroll_grid_container div:nth-child(2) {
+        animation-duration: 17s;
+    }
+    
+    .scroll_grid_container div:nth-child(3) {
+        animation-duration: 20s;
+    }
+
+    .color-mode {
+        padding: clamp(1rem, 2dvh, 2rem) 0;
+    }
+}

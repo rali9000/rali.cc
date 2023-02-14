@@ -162,3 +162,51 @@ html.dark body::after {
 p, i, a, h1, h2, h3, h4, h5, button {
     animation: textShadow 1s infinite;
 }
+
+@keyframes start-up-Y {
+    0% {
+        transform: translateY(0);
+    }
+  
+    100% {
+    transform: translateY(-100dvh);
+    }
+}
+
+@keyframes scroll-Y {
+
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-50%);
+    }
+}
+
+@keyframes start-up-X {
+    0% {
+        transform: translateX(0);
+    }
+  
+    100% {
+    transform: translateX(-100dvw);
+    }
+}
+
+@keyframes scroll-X {
+
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+}
+
+@media all and (max-width: 768px) {
+    p, i, a, h1, h2, h3, h4, h5, button {
+        animation: none;
+    }
+}

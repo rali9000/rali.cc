@@ -1,0 +1,10 @@
+.playlist {
+    border-radius: 1rem;
+    width: 100%;
+    height: 450px;
+}
+
+.playlist iframe {
+    height: 450px;
+    width: 100%;
+}

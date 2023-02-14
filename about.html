@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111">
+    <title>about rali</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/nav_style.css">
+    <link rel="stylesheet" href="./css/home_style.css">
+    <link rel="stylesheet" href="./css/about_style.css">
+    <link rel="stylesheet" href="./assets/fonts/icons/css/website_icons.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="./favicon/browserconfig.xml">
+    <meta name="theme-color" content="#24201e">
+
+</head>
+
+<body data-nav="false">
+    <div class="main home">
+
+        <div class="hero" id="hero">
+            <div class="hero-links-wrapper">
+                
+                <div class="hero-links">
+                    <a href="https://open.spotify.com/artist/3ewxxQBBetFSlJbuSP5Wka?si=03es_XwmTkWcFxYbqHsl3A" class="link">
+                        <i class="icon-spotify"></i>
+                    </a>
+                    <a href="https://music.apple.com/us/artist/rali/1489656582" class="link">
+                        <i class="icon-apple-music"></i>
+                    </a>
+                    <a href="https://prodrali.bandcamp.com/" class="link">
+                        <i class="fa-brands fa-bandcamp"></i>
+                    </a>
+                    <a href="https://soundcloud.com/prodrali" class="link">
+                        <i class="icon-soundcloud"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCnEsORonQXNyUDozW-a-mdQ" class="link">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+                <div class="button-wrapper">
+                    <!-- <button class="top link" type="button">
+                        <a href="#hero" class="link">
+                            <i class="icon-arrow-up"></i>
+                        </a>
+                    </button> -->
+                    <!-- <button class="home link" type="button">
+                        <a href="./index.html" class="link">
+                            <i class="icon-home"></i>
+                        </a>
+                    </button> -->
+                    <button class="color-mode link" id="color-toggle" type="button">
+                        <i class="icon-moon" id="toggle-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-bg">
+                <img src="./assets/images/about_background.png">
+            </div>
+            <div class="text">
+                <h1 class="title">
+                    rali
+                </h1>
+                <h2 class="subtitle">
+                    I'm a computer science engineering student at The Ohio State University with a minor in studio art. I have experience in Java, C, x86-64 Assembly, as well as with UI design and web development. As a musician with the artist name "rali," I began making instrumentals for other artists in 2016 and started making my own music in 2021, specializing in more experimental breakcore. Inspired by artists like The Distillers, Machine Girl, and Earl Sweatshirt, my music is dark, moody, and often aggressive or harsh. I've been drawing since childhood, and have been taking it more seriously since 2018, working primarily with acrylic paint, charcoal, ink, and graphite. I'm a dedicated and hardworking individual with strong problem-solving skills and a passion for technology and the arts.
+                </h2>
+                <p>
+                    This website has been programmed and designed entirely by me.
+                    <br>
+                    If you have any questions, please feel free to <a href="./contact.html" class="link">contact me</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="home" id="nav">
+        <div id="nav-links">
+            <a href="./index.html" class="nav-link link" onclick="navLinkClick()">
+                <h2 class="nav-link-label">home</h2>
+                <img draggable="false" src="./assets/images/home_background.png"
+                class="nav-link-image">
+            </a>
+            <a href="./music.html" class="nav-link link">
+                <h2 class="nav-link-label">music</h2>
+                <img draggable="false" loading="lazy" src="./assets/images/music_background.png"
+                class="nav-link-image">
+            </a>
+            <a href="./art.html" class="nav-link link">
+                <h2 class="nav-link-label">art</h2>
+                <img draggable="false" loading="lazy" src="./assets/images/art_background.png"
+                class="nav-link-image">
+            </a>
+            <a href="./programming.html" class="nav-link link">
+                <h2 class="nav-link-label">programming</h2>
+                <img draggable="false" loading="lazy" src="./assets/images/programming_background.png"
+                class="nav-link-image">
+            </a>
+            <!-- <a href="./about.html" class="nav-link link">
+                <h2 class="nav-link-label">about</h2>
+                <img draggable="false" loading="lazy" src="./assets/images/about_nav.png"
+                class="nav-link-image">
+            </a> -->
+            <a href="./contact.html" class="nav-link link">
+                <h2 class="nav-link-label">contact</h2>
+                <img draggable="false" loading="lazy" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gmail_GM3.width-1000.format-webp.webp"
+                class="nav-link-image">
+            </a>
+        </div>
+    </nav>
+
+    <button class="home" id="nav-toggle" type="button" onclick="toggleNav()">
+        <i class="fa-solid fa-bars nav-open"></i>
+        <i class="fa-solid fa-xmark nav-close"></i>
+    </button>
+    <script src="https://kit.fontawesome.com/af4af67e3f.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

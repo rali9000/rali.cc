@@ -3,6 +3,12 @@ const toggleNav = () => {
     document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
 }
 
+const navLinkClick = () => {
+    setTimeout (() => {
+        toggleNav();
+    }, 250)
+}
+
 /*
  * Dark/light mode toggle
  */
@@ -15,6 +21,7 @@ var dark;
 
 // ORIGINAL COLORS
 // --main-color: #24201e
+// --main-color-transparent: #24201e00
 // --accent-color: #302924
 // --tertiary-color-light: #ccd88d
 // --body-text-color: #F0EAD2
@@ -24,10 +31,13 @@ var dark;
 function toggleDarkMode (root) {
 
     root.style.setProperty("--main-color", "#24201e");
+    root.style.setProperty("--main-color-transparent", "#24201e00");
     root.style.setProperty("--accent-color", "#302924");
+    root.style.setProperty("--tertiary-color", "#9ac563");
     root.style.setProperty("--tertiary-color-light", "#ccd88d");
     root.style.setProperty("--body-text-color", "#F0EAD2");
-    root.style.setProperty("--tertiary-color", "#9ac563");
+
+    root.style.setProperty("--bg-opacity", "20%");
 
     toggleIcon.classList.remove("icon-sun");
     toggleIcon.classList.add("icon-moon");
@@ -37,10 +47,13 @@ function toggleDarkMode (root) {
 // --tertiary-color: #344e41
 function toggleLightMode (root) {
     root.style.setProperty("--main-color", "#F0EAD2");
-    root.style.setProperty("--accent-color", "#ccd88d");
-    root.style.setProperty("--tertiary-color-light", "#302924");
+    root.style.setProperty("--main-color-transparent", "#F0EAD200");
+    root.style.setProperty("--accent-color", "#c6ce9c");
+    root.style.setProperty("--tertiary-color", "#3e613b");
+    root.style.setProperty("--tertiary-color-light", "#344e41");
     root.style.setProperty("--body-text-color", "#24201e");
-    root.style.setProperty("--tertiary-color", "#344e41");
+
+    root.style.setProperty("--bg-opacity", "45%");
 
     toggleIcon.classList.remove("icon-moon");
     toggleIcon.classList.add("icon-sun");
@@ -81,8 +94,10 @@ colorToggle.addEventListener("click", ()=>{
     root.classList.toggle("dark");
 
     if (dark) {
+        console.log("dark mode...")
         toggleDarkMode(root);
     } else {
+        console.log("light mode...")
         toggleLightMode(root);
     }
 

@@ -1,113 +1,492 @@
+/* inter-200 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../assets/fonts/inter/inter-v12-latin-200.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/inter/inter-v12-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/inter/inter-v12-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/inter/inter-v12-latin-200.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/inter/inter-v12-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/inter/inter-v12-latin-200.svg#Inter') format('svg'); /* Legacy iOS */
+}
+  
+/* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/inter/inter-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/inter/inter-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/inter/inter-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/inter/inter-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/inter/inter-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/inter/inter-v12-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+}
+  
+/* inter-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/inter/inter-v12-latin-600.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/inter/inter-v12-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/inter/inter-v12-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/inter/inter-v12-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/inter/inter-v12-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/inter/inter-v12-latin-600.svg#Inter') format('svg'); /* Legacy iOS */
+}
+  
+/* inter-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/inter/inter-v12-latin-900.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/inter/inter-v12-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/inter/inter-v12-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/inter/inter-v12-latin-900.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/inter/inter-v12-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/inter/inter-v12-latin-900.svg#Inter') format('svg'); /* Legacy iOS */
+}
+
+/* chivo-mono-200 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Chivo Mono';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200.svg#ChivoMono') format('svg'); /* Legacy iOS */
+}
+  
+/* chivo-mono-200italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Chivo Mono';
+    font-style: italic;
+    font-weight: 200;
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200italic.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200italic.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-200italic.svg#ChivoMono') format('svg'); /* Legacy iOS */
+}
+  
+/* chivo-mono-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Chivo Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-regular.svg#ChivoMono') format('svg'); /* Legacy iOS */
+}
+  
+/* chivo-mono-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Chivo Mono';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-italic.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-italic.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-italic.svg#ChivoMono') format('svg'); /* Legacy iOS */
+}
+  
+/* chivo-mono-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Chivo Mono';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600.svg#ChivoMono') format('svg'); /* Legacy iOS */
+}
+  
+/* chivo-mono-600italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Chivo Mono';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600italic.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600italic.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-600italic.svg#ChivoMono') format('svg'); /* Legacy iOS */
+}
+  
+/* chivo-mono-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Chivo Mono';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900.svg#ChivoMono') format('svg'); /* Legacy iOS */
+}
+  
+/* chivo-mono-900italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Chivo Mono';
+    font-style: italic;
+    font-weight: 900;
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900italic.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900italic.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/chivo-mono/chivo-mono-v4-latin-900italic.svg#ChivoMono') format('svg'); /* Legacy iOS */
+}
+
+/* Global */
 :root {
     --main-color: #24201e;
+    --main-color-transparent: #24201e00;
     --accent-color: #302924;
     --tertiary-color: #9ac563;
     --tertiary-color-light: #ccd88d;
     --body-text-color: #F0EAD2;
     --text-shadow-1: rgba(0, 255, 0, 0.15);
     --text-shadow-2: rgba(255, 0, 255, 0.1);
+    --bg-opacity: 20%
 }
 
-body, .container {
-    height: 100vh;
-    width: 100vw;
+body {
     margin: 0;
-    background-color: var(--accent-color);
-    color: var(--body-text-color);
-    overflow: hidden;
+    background-color: var(--main-color);
+    overflow-x: hidden;
 }
 
-/* Scrollbar */
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
 html::-webkit-scrollbar {
-    appearance: none; /* Safari */
-      width: 0; /* Chrome */
-    height: 0;
+    display: none;
+}
+
+/* General responsive grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin: 2rem;
+    grid-auto-flow: dense;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    border-radius: 2rem;
+}
+
+.grid-item-wrapper {
+    overflow: hidden;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: clamp(20dvh, 35dvh, 40dvh);
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.grid-item-desc {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 280px;
+    width: 100%;
+    font-size: 1.5em;
+    z-index: 1;
+    opacity: 10%;
+    margin: 2rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.grid-item-desc .text {
+    font-size: 1.15em;
+}
+
+.grid-item-link-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    /* font-size: 1.25em; */
+}
+
+.grid-img {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+}
+
+.grid-item.fade:hover .grid-img {
+    opacity: 5%;
+    z-index: 0;
+}
+
+.grid-item.fade:hover .grid-item-desc {
+    opacity: 100%;
+}
+
+.main {
+    width: 100dvw;
+    background-color: var(--main-color);
+    color: var(--body-text-color);
+    position: relative;
+    z-index: 2;
 }
 
 .container {
-    /* background-image: url("https://images.unsplash.com/photo-1672426142068-c2103a852426?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"); */
-    background-color: var(--main-color);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 2;
-    color: var(--body-text-color);
+    display: flex;
+    justify-content: center;
+    width: 100dvw;
+    margin: 12rem 0;
 }
 
 .content {
-    height: 100vh;
-    width: 100vw;
+    width: 100dvw;
+    max-width: 1600px;
 }
 
-.stream-links {
-    font-size: 2rem;
-    width: clamp(10vw, 15vw, 20vw);
-    gap: 1rem;
-    height: 3rem;
+/* General links */
+.links {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    text-shadow: 0.25rem 0.3rem 1rem rgba(0, 20, 30, 0.5);
-    z-index: 10;
-    padding: 0 clamp(1rem, 2vw, 2rem);
 }
 
-.stream-links .link {
+.link {
+    color: var(--tertiary-color-light);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.link:hover {
+    color: var(--tertiary-color);
+}
+
+.link:active, .link:focus {
+    outline-style: none;
+}
+
+/* General text */
+.text {
+    font-family: 'Chivo Mono';
+    font-weight: normal;
+}
+
+.text i {
+    font-weight: 100;
+}
+
+.title {
+    font-family: 'Inter';
+    font-size: 4em;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Hero section */
+.hero {
+    /* position: absolute; */
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, var(--main-color), var(--main-color-transparent) 10%);
+}
+
+.hero-bg {
+    position: absolute;
+    z-index: -1;
+    height: 100dvh;
+    width: 100dvw;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.hero-bg img {
+    opacity: var(--bg-opacity);
+    filter: blur(10px);
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* Hero text */
+.hero .text {
+    padding: 5rem 15rem 5rem 5rem;
+    max-width: 1080px;
+}
+
+.hero .title {
+    text-align: left;
+    font-size: 17.5em;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.hero .subtitle {
+    text-align: left;
+    font-size: 1.5em;
+    margin-top: -10rem;
+}
+
+.hero p {
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.hero .links {
+    font-size: 1.25em;
+}
+
+/* Hero links wrapper */
+.hero-links-wrapper {
+    width: 6rem;
+    height: 100dvh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.hero-links-wrapper::after {
+    content: '';
+    background: linear-gradient(to left, var(--main-color) -25%, var(--main-color-transparent) 100%);
+    filter: blur(25px);
+    width: 10dvw;
+    height: 100dvh;
+    position: absolute;
+    right: 0;
+}
+
+/* Links on hero section */
+.main.home .hero-links {
+    height: 3rem;
+    width: clamp(10dvw, 15dvw, 20dvw);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    padding: 0 clamp(1rem, 2dvw, 2rem);
+}
+
+.main.home .hero-links .link {
     display: flex;
     justify-content: center;
     width: 100%;
     text-align: center;
 }
 
-.link {
-    color: var(--body-text-color);
-    text-decoration: none;
-}
-
-.links {
-    z-index: 10;
-    width: 100vw;
-    height: 7.5vh;
-    position: absolute;
-    bottom: 0;
+.hero-links {
+    font-size: 2em;
+    height: clamp(15dvh, 20dvh, 25dvh);
+    width: 3rem;
+    gap: 1rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    text-shadow: 0.25rem 0.3rem 1rem rgba(0, 20, 30, 0.5);
+    padding: clamp(1rem, 2dvh, 2rem) 0;
 }
 
-.links::after {
-    content: '';
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--main-color) 125%);
-    width: 100vw;
-    height: 20vh;
-    position: absolute;
-    bottom: 0;
-    /* opacity: 0.5; */
-}
-
-.color-mode {
+button {
     background: transparent;
     border: none;
-    color: var(--body-text-color);
     cursor: pointer;
-    padding: 0 clamp(1rem, 2vw, 2rem);
-    font-size: 2rem;
+}
+
+/* Light/dark mode toggle */
+.main.home .button-wrapper {
+    padding: 0 clamp(1rem, 2dvw, 2rem);
+}
+
+.main.home .button-wrapper button {
+    padding: 0 clamp(1rem, 2dvw, 2rem);
+    z-index: 10;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(1rem, 2dvw, 2rem) 0;
     text-shadow: 0.25rem 0.3rem 1rem rgba(0, 20, 30, 0.5);
     z-index: 10;
 }
 
-.color-mode i {
+.button-wrapper button {
+    font-size: 2em;
+    padding: clamp(1rem, 2dvw, 2rem) 0;
+}
+
+.button-wrapper button i {
     width: 100%;
     text-align: center;
 }
 
+/* Background logo */
 .logo {
     color: var(--accent-color);
     position: absolute;
     bottom: 50%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 20vw;
+    font-size: 20dvw;
     opacity: 0.5;
     transition: transform 0.4s ease-in-out;
 }
@@ -116,163 +495,82 @@ html::-webkit-scrollbar {
     animation: none!important;
 }
 
-.grid_container {
-    display: grid;
-    position: relative;
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    grid-template-columns: repeat(3, 30vw);
-    padding: 0 3vw;
-    gap: 0 2vw;
-    align-items: center;
-    bottom: -100vh;
-    z-index: 5;
-
-    animation-name: start-up;
-    animation-iteration-count: 1;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.5s;
-
-    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
-    -moz-animation-fill-mode: forwards;    /* FF 5+ */
-    -o-animation-fill-mode: forwards;      /* Not implemented yet */
-    -ms-animation-fill-mode: forwards;     /* IE 10+ */
-    animation-fill-mode: forwards;         /* When the spec is finished */
-}
-
-.grid_container div:nth-child(1) {
-    animation-duration: 26s;
-}
-
-.grid_container div:nth-child(2) {
-    animation-duration: 21s;
-}
-
-.grid_container div:nth-child(3) {
-    animation-duration: 23s;
-}
-
-#permas {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    position: relative;
-    animation-name: scroll;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-delay: 0.5s;
-}
-
-#permas img{
-    object-fit: cover;
-    border-radius: 1rem;
-    margin-bottom: 5vh;
-}
-
-@keyframes start-up {
-    0% {
-        transform: translateY(0);
-    }
-  
-    100% {
-    transform: translateY(-100vh);
-    }
-}
-
-@keyframes scroll {
-
-    0% {
-      transform: translateY(0);
-    }
-
-    100% {
-      transform: translateY(-50%);
-    }
-}
-
 @media screen and (max-width: 1120px) {
 
-    .links {
-        z-index: 10;
-        width: 100vw;
-        height: 7.5vh;
-        position: absolute;
-        bottom: auto;
+    .content {
+        margin-right: 6rem;
+    }
+
+    .main.home .hero-links-wrapper {
+        width: 15dvw;
+        height: 100dvh;
+        right: 0;
         top: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
     }
     
-    .links::after {
+    .main.home .hero-links-wrapper::after {
         content: '';
-        background: linear-gradient(var(--main-color) -25%, rgba(0, 0, 0, 0) 100%);
-        width: 100vw;
-        height: 20vh;
+        background: linear-gradient(to left, var(--main-color) 0%, var(--main-color-transparent) 100%);
+        width: 20dvw;
+        height: 100dvh;
         position: absolute;
-        bottom: auto;
+        right: 0;
+    }
+
+    .main.home .hero-links {
+        font-size: 2em;
+        height: clamp(15dvh, 20dvh, 25dvh);
+        gap: 1rem;
+        width: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+        padding: clamp(1rem, 2dvh, 2rem) 0;
+    }
+
+    .main.home .button-wrapper {
+        flex-direction: column;
+        padding: clamp(1rem, 2dvh, 2rem) 0;
+        z-index: 10;
+    }
+    
+    .main.home .button-wrapper button {
+        padding: clamp(1rem, 2dvh, 2rem) 0;
+        font-size: 2em;
+        z-index: 10;
     }
 
 }
 
 @media all and (max-width: 768px) {
-    .grid_container {
-        grid-template-columns: none;
-        grid-template-rows: repeat(3, 20vh);
-        padding: 10vh 0;
-        gap: 2vh 0;
-        bottom: 0;
-        height: 100vh;
-        right: -100vw;
+    :root {
+        --text-shadow-1: rgba(0, 255, 0, 0.075);
+        --text-shadow-2: rgba(255, 0, 255, 0.05);
     }
 
-    #permas {
-        flex-direction: row;
-        height: 100%;
-        width: auto;
-        justify-content: baseline;
+    .container {
+        margin: 6rem 6rem 6rem 1rem;
+    }
+    
+    .content {
+        width: 80dvw;
+        max-width: 500px;
     }
 
-    #permas img{
-        margin-bottom: 0;
-        margin-right: 5vw;
+    .grid-container {
+        margin: 0;
     }
 
-    .grid_container div:nth-child(1) {
-        animation-duration: 16s;
-    }
-    
-    .grid_container div:nth-child(2) {
-        animation-duration: 11s;
-    }
-    
-    .grid_container div:nth-child(3) {
-        animation-duration: 13s;
+    html {
+        font-size: 8px;
     }
 
-    @keyframes start-up {
-        0% {
-            transform: translateX(0);
-        }
-      
-        100% {
-        transform: translateX(-100vw);
-        }
-    }
-    
-    @keyframes scroll {
-    
-        0% {
-          transform: translateX(0);
-        }
-    
-        100% {
-          transform: translateX(-50%);
-        }
+    .main.home .hero-links-wrapper::after, .hero-links-wrapper::after {
+        content: none;
+        background: transparent;
     }
 }
 
