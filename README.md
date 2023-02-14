@@ -1,5 +1,5 @@
 # <h1 align="center"> rali.cc </h1>
-## Website can be found at https://rali.cc/.
+## <h2 align="center"> Website can be found at https://rali.cc/. </h2>
 
 
 ### A repository containing all the code used for my personal/portfolio website, *without including the high quality assets*.
