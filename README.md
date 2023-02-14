@@ -1,6 +1,5 @@
 # <h1 align="center"> rali.cc </h1>
-## <h2 align="center"> Website can be found at https://rali.cc/. </h2>
-
+### <h3 align="center"> Website can be found at https://rali.cc/ </h3>
 
 ### A repository containing all the code used for my personal/portfolio website, *without including the high quality assets*.
 
@@ -29,3 +28,4 @@ This current version is under construction! Currently past the home page I am us
 * <a href="https://github.com/rali9000/rali.cc/tree/rali.cc-v2"> Version 2.0 </a>
 * <a href="https://github.com/rali9000/rali.cc/tree/rali.cc-v1"> Version 1.0 </a>
 
+## <h2 align="center"> https://rali.cc/. </h2>
