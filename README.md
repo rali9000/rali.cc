@@ -3,7 +3,7 @@
 
 ### A repository containing all the code used for my personal/portfolio website, *without including the high quality assets*.
 
-Coded and designed by me.
+Coded and designed by me. <br>
 This current version is under construction! Known bugs and issues are listed below.
 
 ### Features:
