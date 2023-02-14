@@ -15,9 +15,10 @@ This current version is under construction! Currently past the home page I am us
 * Light and dark mode switch (that can remember your settings)
 
 ### Known issues:
-* Some pages still use pages from an older version of the website
-* Programming and about page yet to be created
-* Placeholder images from unsplash to be replaced
+* Programming page redirects to my github
+* Some images from the following categories on the art page are missing some info
+  * Traditional Art -> (Media, Dates)
+  * Digital Art -> (Links)
 
 ### Version History:
 * <a href="https://github.com/rali9000/rali.cc/tree/rali.cc-v2"> Version 2.0 </a>
