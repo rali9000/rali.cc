@@ -24,6 +24,8 @@ This current version is under construction! Known bugs and issues are listed bel
 * Some links on the contact page do not direct you to the correct page
   * Instagram
   * LinkedIn
+* Side links don't display correctly on mobile versions of the landing page, about page, and contact page
+* Side links don't display correctly after opening the navbar
 
 ### Version History:
 * <a href="https://github.com/rali9000/rali.cc/tree/rali.cc-v2"> Version 2.0 </a>
